@@ -21,9 +21,13 @@ const ColoringPage = ({ item }) => {
     setIsDrawing(true)
     playClickSound()
     const canvas = canvasRef.current
+    if (!canvas) return
+    
     const rect = canvas.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY
+    const x = clientX - rect.left
+    const y = clientY - rect.top
     
     setStrokes([...strokes, { color: currentColor, points: [{ x, y }] }])
   }
@@ -32,9 +36,13 @@ const ColoringPage = ({ item }) => {
     if (!isDrawing) return
     
     const canvas = canvasRef.current
+    if (!canvas) return
+    
     const rect = canvas.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY
+    const x = clientX - rect.left
+    const y = clientY - rect.top
     
     const newStrokes = [...strokes]
     newStrokes[newStrokes.length - 1].points.push({ x, y })
@@ -130,13 +138,11 @@ const ColoringPage = ({ item }) => {
         onMouseLeave={stopDrawing}
         onTouchStart={(e) => {
           e.preventDefault()
-          const touch = e.touches[0]
-          startDrawing(touch)
+          startDrawing(e)
         }}
         onTouchMove={(e) => {
           e.preventDefault()
-          const touch = e.touches[0]
-          draw(touch)
+          draw(e)
         }}
         onTouchEnd={stopDrawing}
       />
