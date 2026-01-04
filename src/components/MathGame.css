@@ -1,0 +1,203 @@
+.math-game {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h2 {
+  font-size: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.level-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.level-selector button {
+  padding: 10px 25px;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.level-selector button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.level-selector button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  border-radius: 15px;
+}
+
+.stat {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.question-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(245, 87, 108, 0.3);
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.number,
+.operator,
+.equals,
+.question-mark {
+  min-width: 60px;
+  text-align: center;
+}
+
+.answer-input {
+  width: 100%;
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: white;
+  color: #333;
+}
+
+.answer-input:focus {
+  outline: none;
+  border-color: #ffeaa7;
+  box-shadow: 0 0 0 4px rgba(255, 234, 167, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: white;
+  color: #f5576c;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feedback.correct {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #2d3436;
+}
+
+.feedback.bonus {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  color: #2d3436;
+  animation: pulse 0.5s ease-in-out;
+}
+
+.feedback.wrong {
+  background: linear-gradient(135deg, #ffcccc 0%, #ffaaaa 100%);
+  color: #cc0000;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .question {
+    font-size: 36px;
+    gap: 15px;
+  }
+
+  .number,
+  .operator,
+  .equals,
+  .question-mark {
+    min-width: 45px;
+  }
+
+  .answer-input {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .level-selector {
+    flex-direction: column;
+  }
+
+  .level-selector button {
+    width: 100%;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

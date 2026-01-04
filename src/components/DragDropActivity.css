@@ -1,0 +1,136 @@
+.drag-drop-activity {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.activity-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.activity-header h2 {
+  font-size: 2rem;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.activity-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.sortable-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  min-height: 300px;
+}
+
+.draggable-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: grab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.draggable-item:active {
+  cursor: grabbing;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.activity-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.check-btn,
+.reset-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.check-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.reset-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.completion-message {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.completion-message h3 {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.completion-message p {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.stars-reward {
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  color: #f39c12;
+  margin: 15px 0 !important;
+}
+
+.play-again-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hint-message {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 193, 7, 0.2);
+  border-left: 4px solid #ffc107;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .draggable-item {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+}

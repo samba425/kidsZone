@@ -1,0 +1,128 @@
+.sound-recognition {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h2 {
+  font-size: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.play-sound-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  padding: 25px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(245, 87, 108, 0.3);
+  transition: all 0.3s ease;
+}
+
+.sound-icon {
+  font-size: 40px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.animal-card {
+  padding: 30px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.animal-emoji {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.animal-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.animal-card:hover:not(:disabled) {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+}
+
+.animal-card.correct {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  animation: correctPulse 0.5s ease-in-out;
+}
+
+.animal-card.correct .animal-name {
+  color: #2d3436;
+}
+
+.animal-card.wrong {
+  background: linear-gradient(135deg, #ffcccc 0%, #ffaaaa 100%);
+  animation: shake 0.5s ease-in-out;
+}
+
+.animal-card.wrong .animal-name {
+  color: #cc0000;
+}
+
+@keyframes correctPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+@media (max-width: 768px) {
+  .animals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-emoji {
+    font-size: 50px;
+  }
+
+  .play-sound-btn {
+    font-size: 20px;
+    padding: 20px;
+  }
+}

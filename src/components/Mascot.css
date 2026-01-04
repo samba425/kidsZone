@@ -1,0 +1,114 @@
+.mascot-container {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.mascot-container.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.mascot-container.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.mascot-container.top-right {
+  top: 80px;
+  right: 20px;
+}
+
+.mascot-container.top-left {
+  top: 80px;
+  left: 20px;
+}
+
+.mascot {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  pointer-events: auto;
+}
+
+.mascot-face {
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  user-select: none;
+}
+
+.mascot-shadow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 10px;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.mascot-speech-bubble {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  pointer-events: none;
+  max-width: 200px;
+  text-align: center;
+}
+
+.speech-arrow {
+  position: absolute;
+  bottom: -8px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #764ba2;
+}
+
+@media (max-width: 768px) {
+  .mascot {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mascot-face {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .mascot-speech-bubble {
+    font-size: 14px;
+    padding: 10px 14px;
+    max-width: 150px;
+    bottom: 70px;
+  }
+
+  .mascot-container.bottom-right,
+  .mascot-container.bottom-left {
+    bottom: 10px;
+  }
+
+  .mascot-container.bottom-right,
+  .mascot-container.top-right {
+    right: 10px;
+  }
+
+  .mascot-container.bottom-left,
+  .mascot-container.top-left {
+    left: 10px;
+  }
+}

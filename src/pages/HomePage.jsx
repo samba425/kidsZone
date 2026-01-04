@@ -75,6 +75,14 @@ const HomePage = () => {
               🔥 {dailyStreak} Day{dailyStreak > 1 ? 's' : ''}
             </motion.div>
           )}
+          <motion.button
+            className="parent-dashboard-btn"
+            onClick={() => navigate('/parent-dashboard')}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            📊 Parent
+          </motion.button>
         </motion.div>
 
         <motion.div 
@@ -128,6 +136,22 @@ const HomePage = () => {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        <motion.div
+          className="games-section"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+        >
+          <motion.button
+            className="games-btn"
+            onClick={() => navigate('/games')}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            🎮 Games & Activities 🎮
+          </motion.button>
         </motion.div>
 
         <motion.div 

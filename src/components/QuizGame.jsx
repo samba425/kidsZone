@@ -5,6 +5,18 @@ import { addStars } from '../utils/rewards'
 import './QuizGame.css'
 
 const QuizGame = ({ items, category }) => {
+  // Default quiz data
+  const defaultItems = [
+    { id: 1, name: 'Apple', emoji: '🍎' },
+    { id: 2, name: 'Banana', emoji: '🍌' },
+    { id: 3, name: 'Cherry', emoji: '🍒' },
+    { id: 4, name: 'Grapes', emoji: '🍇' },
+    { id: 5, name: 'Orange', emoji: '🍊' },
+    { id: 6, name: 'Strawberry', emoji: '🍓' },
+    { id: 7, name: 'Watermelon', emoji: '🍉' }
+  ]
+
+  const quizItems = items || defaultItems
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showResult, setShowResult] = useState(false)
@@ -14,12 +26,12 @@ const QuizGame = ({ items, category }) => {
 
   useEffect(() => {
     generateQuestions()
-  }, [items])
+  }, [quizItems])
 
   const generateQuestions = () => {
-    const quizQuestions = items.slice(0, 5).map(item => {
+    const quizQuestions = quizItems.slice(0, 5).map(item => {
       // Generate wrong answers
-      const wrongAnswers = items
+      const wrongAnswers = quizItems
         .filter(i => i.id !== item.id)
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)

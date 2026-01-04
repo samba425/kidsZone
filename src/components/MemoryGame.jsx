@@ -5,6 +5,17 @@ import { addStars } from '../utils/rewards'
 import './MemoryGame.css'
 
 const MemoryGame = ({ items, onComplete }) => {
+  // Default memory game items
+  const defaultItems = [
+    { id: 1, emoji: '🍎', name: 'Apple' },
+    { id: 2, emoji: '🍌', name: 'Banana' },
+    { id: 3, emoji: '🍒', name: 'Cherry' },
+    { id: 4, emoji: '🍇', name: 'Grapes' },
+    { id: 5, emoji: '🍊', name: 'Orange' },
+    { id: 6, emoji: '🍓', name: 'Strawberry' }
+  ]
+
+  const gameItems = items || defaultItems
   const [cards, setCards] = useState([])
   const [flipped, setFlipped] = useState([])
   const [matched, setMatched] = useState([])
@@ -13,8 +24,8 @@ const MemoryGame = ({ items, onComplete }) => {
 
   useEffect(() => {
     // Create pairs of cards
-    const gameItems = items.slice(0, 6) // Use 6 items = 12 cards
-    const cardPairs = [...gameItems, ...gameItems].map((item, index) => ({
+    const selectedItems = gameItems.slice(0, 6) // Use 6 items = 12 cards
+    const cardPairs = [...selectedItems, ...selectedItems].map((item, index) => ({
       id: index,
       content: item.emoji || item.symbol || item.icon,
       pairId: item.id || item.name
@@ -23,7 +34,7 @@ const MemoryGame = ({ items, onComplete }) => {
     // Shuffle cards
     const shuffled = cardPairs.sort(() => Math.random() - 0.5)
     setCards(shuffled)
-  }, [items])
+  }, [gameItems])
 
   const handleCardClick = (index) => {
     if (isChecking || flipped.includes(index) || matched.includes(index)) {

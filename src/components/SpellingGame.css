@@ -1,0 +1,188 @@
+.spelling-game {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h2 {
+  font-size: 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.game-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.word-display {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.word-emoji {
+  font-size: 100px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.word-hint {
+  font-size: 20px;
+  color: #667eea;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: #f0f4ff;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  min-height: 100px;
+  align-items: center;
+}
+
+.letter-tile {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: grab;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.letter-tile:active {
+  cursor: grabbing;
+}
+
+.letter-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hint-btn,
+.check-btn,
+.shuffle-btn,
+.next-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hint-btn {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  color: #2d3436;
+}
+
+.check-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.shuffle-btn {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #2d3436;
+}
+
+.next-btn {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+.hint-btn:hover,
+.check-btn:hover,
+.shuffle-btn:hover,
+.next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-radius: 15px;
+}
+
+.success-message h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.success-message p {
+  font-size: 18px;
+  color: #636e72;
+  margin-bottom: 20px;
+}
+
+.progress-info {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .word-emoji {
+    font-size: 80px;
+  }
+
+  .letters-container {
+    gap: 10px;
+  }
+
+  .letter-tile {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .game-controls {
+    flex-direction: column;
+  }
+
+  .hint-btn,
+  .check-btn,
+  .shuffle-btn {
+    width: 100%;
+  }
+}
