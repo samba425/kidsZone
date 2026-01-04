@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate, useParams } from 'react-router-dom'
 import learningData from '../data/learningData.json'
+import { triggerConfetti, triggerStarBurst, playSuccessSound, playClickSound } from '../utils/celebration'
+import { addStars, getTotalStars, markCategoryCompleted } from '../utils/rewards'
 import './CategoryPage.css'
 
 const CategoryPage = () => {
@@ -9,6 +11,11 @@ const CategoryPage = () => {
   const { levelId, categoryId } = useParams()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showCelebration, setShowCelebration] = useState(false)
+  const [totalStars, setTotalStars] = useState(0)
+
+  useEffect(() => {
+    setTotalStars(getTotalStars())
+  }, [])
 
   const levelData = learningData[levelId]
   const categoryData = levelData?.categories[categoryId]
@@ -21,17 +28,27 @@ const CategoryPage = () => {
   const isLastItem = currentIndex === categoryData.items.length - 1
 
   const handleNext = () => {
+    playClickSound()
     if (isLastItem) {
+      // Complete category!
+      triggerConfetti()
+      const stars = addStars(5)
+      setTotalStars(stars)
+      markCategoryCompleted(levelId, categoryId)
       setShowCelebration(true)
       setTimeout(() => {
         navigate(`/level/${levelId}`)
       }, 3000)
     } else {
+      triggerStarBurst()
+      const stars = addStars(1)
+      setTotalStars(stars)
       setCurrentIndex(currentIndex + 1)
     }
   }
 
   const handlePrevious = () => {
+    playClickSound()
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1)
     }
@@ -163,12 +180,31 @@ const CategoryPage = () => {
     <div className="category-page" style={{ background: `linear-gradient(135deg, ${levelData.color} 0%, #764ba2 100%)` }}>
       <motion.button 
         className="back-button"
-        onClick={() => navigate(`/level/${levelId}`)}
+        onClick={() => {
+          playClickSound()
+          navigate(`/level/${levelId}`)
+        }}
         whileHover={{ scale: 1.1, rotate: -10 }}
         whileTap={{ scale: 0.9 }}
       >
         ←
       </motion.button>
+
+      <motion.div 
+        className="stars-counter"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3 }}
+      >
+        <motion.span
+          key={totalStars}
+          initial={{ scale: 1.5, rotate: 360 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: "spring" }}
+        >
+          ⭐ {totalStars}
+        </motion.span>
+      </motion.div>
 
       <div className="container">
         <motion.div 
@@ -243,16 +279,25 @@ const CategoryPage = () => {
               transition={{ type: "spring", bounce: 0.6 }}
             >
               <motion.div
+                className="celebration-icon"
                 animate={{ 
-                  scale: [1, 1.2, 1],
-                  rotate: [0, 10, -10, 0]
+                  scale: [1, 1.3, 1],
+                  rotate: [0, 15, -15, 0]
                 }}
                 transition={{ duration: 0.5, repeat: Infinity }}
               >
                 🎉
               </motion.div>
               <h2>Awesome Job!</h2>
-              <p>You completed all items! 🌟</p>
+              <p>You completed {categoryData.title}! 🌟</p>
+              <motion.div
+                className="stars-earned"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.3, type: "spring" }}
+              >
+                <span className="stars-big">⭐ +5 Stars!</span>
+              </motion.div>
               <motion.div
                 className="celebration-emojis"
                 animate={{ y: [0, -20, 0] }}

@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import learningData from '../data/learningData.json'
+import { getTotalStars, updateDailyStreak, getDailyStreak } from '../utils/rewards'
 import './HomePage.css'
 
 const HomePage = () => {
   const navigate = useNavigate()
+  const [totalStars, setTotalStars] = useState(0)
+  const [dailyStreak, setDailyStreak] = useState(0)
+
+  useEffect(() => {
+    setTotalStars(getTotalStars())
+    const streak = updateDailyStreak()
+    setDailyStreak(streak)
+  }, [])
 
   const levels = [
     { id: 'preschool', ...learningData.preschool },
@@ -44,6 +53,30 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="container">
+        <motion.div 
+          className="top-bar"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            className="stats-display"
+            whileHover={{ scale: 1.05 }}
+          >
+            ⭐ {totalStars} Stars
+          </motion.div>
+          {dailyStreak > 0 && (
+            <motion.div
+              className="streak-display"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              🔥 {dailyStreak} Day{dailyStreak > 1 ? 's' : ''}
+            </motion.div>
+          )}
+        </motion.div>
+
         <motion.div 
           className="page-header"
           initial={{ y: -100, opacity: 0 }}

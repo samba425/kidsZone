@@ -3,6 +3,27 @@
   padding: 20px;
   box-sizing: border-box;
   overflow-x: hidden;
+  position: relative;
+}
+
+.stars-counter {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 .category-header {
@@ -1155,46 +1176,75 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2000;
+  backdrop-filter: blur(10px);
 }
 
 .celebration-content {
-  background: white;
-  border-radius: 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 30px;
   padding: 50px 40px;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
 }
 
-.celebration-content > div:first-child {
-  font-size: 6rem;
-}
-
-.celebration-content h2 {
-  font-size: 2.5rem;
-  color: #667eea;
-  margin: 20px 0;
-}
-
-.celebration-content p {
-  font-size: 1.6rem;
-  color: #666;
+.celebration-icon {
+  font-size: 8rem;
   margin-bottom: 20px;
 }
 
-.celebration-emojis {
+.celebration-content h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.celebration-content p {
+  font-size: 1.8rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.stars-earned {
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 3px dashed rgba(255, 255, 255, 0.5);
+}
+
+.stars-big {
   font-size: 2.5rem;
-  margin-top: 15px;
+  font-weight: bold;
+  color: #FFD700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.celebration-emojis {
+  font-size: 3rem;
+  margin-top: 20px;
+  letter-spacing: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .category-page {
     padding: 8px;
+  }
+  
+  .stars-counter {
+    top: 70px;
+    right: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
   }
 
   .category-title-main {
