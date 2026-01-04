@@ -1,0 +1,1967 @@
+{
+  "preschool": {
+    "name": "Pre-School",
+    "ageGroup": "2-3 years",
+    "color": "#FF6B6B",
+    "icon": "🎈",
+    "categories": {
+      "alphabets": {
+        "title": "Learn Alphabets",
+        "icon": "🔤",
+        "items": [
+          { "letter": "A", "word": "Apple", "emoji": "🍎", "sound": "/a/" },
+          { "letter": "B", "word": "Ball", "emoji": "⚽", "sound": "/b/" },
+          { "letter": "C", "word": "Cat", "emoji": "🐱", "sound": "/c/" },
+          { "letter": "D", "word": "Dog", "emoji": "🐶", "sound": "/d/" },
+          { "letter": "E", "word": "Elephant", "emoji": "🐘", "sound": "/e/" },
+          { "letter": "F", "word": "Fish", "emoji": "🐠", "sound": "/f/" },
+          { "letter": "G", "word": "Grapes", "emoji": "🍇", "sound": "/g/" },
+          { "letter": "H", "word": "House", "emoji": "🏠", "sound": "/h/" },
+          { "letter": "I", "word": "Ice Cream", "emoji": "🍦", "sound": "/i/" },
+          { "letter": "J", "word": "Jet", "emoji": "✈️", "sound": "/j/" }
+        ]
+      },
+      "numbers": {
+        "title": "Learn Numbers",
+        "icon": "🔢",
+        "items": [
+          { "number": 1, "word": "One", "emoji": "1️⃣", "visual": "⭐" },
+          { "number": 2, "word": "Two", "emoji": "2️⃣", "visual": "⭐⭐" },
+          { "number": 3, "word": "Three", "emoji": "3️⃣", "visual": "⭐⭐⭐" },
+          { "number": 4, "word": "Four", "emoji": "4️⃣", "visual": "⭐⭐⭐⭐" },
+          { "number": 5, "word": "Five", "emoji": "5️⃣", "visual": "⭐⭐⭐⭐⭐" },
+          { "number": 6, "word": "Six", "emoji": "6️⃣", "visual": "⭐⭐⭐⭐⭐⭐" },
+          { "number": 7, "word": "Seven", "emoji": "7️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐" },
+          { "number": 8, "word": "Eight", "emoji": "8️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐" },
+          { "number": 9, "word": "Nine", "emoji": "9️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐⭐" },
+          { "number": 10, "word": "Ten", "emoji": "🔟", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐" },
+          { "number": 11, "word": "Eleven", "emoji": "🔢", "visual": "🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟" },
+          { "number": 12, "word": "Twelve", "emoji": "🔢", "visual": "💫💫💫💫💫💫💫💫💫💫💫💫" },
+          { "number": 13, "word": "Thirteen", "emoji": "🔢", "visual": "✨✨✨✨✨✨✨✨✨✨✨✨✨" },
+          { "number": 14, "word": "Fourteen", "emoji": "🔢", "visual": "🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯" },
+          { "number": 15, "word": "Fifteen", "emoji": "🔢", "visual": "🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪🎪" },
+          { "number": 16, "word": "Sixteen", "emoji": "🔢", "visual": "Count: 16" },
+          { "number": 17, "word": "Seventeen", "emoji": "🔢", "visual": "Count: 17" },
+          { "number": 18, "word": "Eighteen", "emoji": "🔢", "visual": "Count: 18" },
+          { "number": 19, "word": "Nineteen", "emoji": "🔢", "visual": "Count: 19" },
+          { "number": 20, "word": "Twenty", "emoji": "🔢", "visual": "Count: 20" }
+        ]
+      },
+      "shapes": {
+        "title": "Learn Shapes",
+        "icon": "⭐",
+        "items": [
+          { "name": "Circle", "emoji": "⚪", "color": "#FF6B6B", "sides": 0 },
+          { "name": "Square", "emoji": "🟥", "color": "#4ECDC4", "sides": 4 },
+          { "name": "Triangle", "emoji": "🔺", "color": "#FFE66D", "sides": 3 },
+          { "name": "Star", "emoji": "⭐", "color": "#A8E6CF", "sides": 5 },
+          { "name": "Rectangle", "emoji": "🟦", "color": "#87CEEB", "sides": 4 },
+          { "name": "Oval", "emoji": "🥚", "color": "#FFB6C1", "sides": 0 },
+          { "name": "Heart", "emoji": "❤️", "color": "#FF69B4", "sides": 0 },
+          { "name": "Diamond", "emoji": "💎", "color": "#B9F2FF", "sides": 4 },
+          { "name": "Pentagon", "emoji": "⬟", "color": "#DDA0DD", "sides": 5 },
+          { "name": "Hexagon", "emoji": "⬡", "color": "#F0E68C", "sides": 6 }
+        ]
+      },
+      "colors": {
+        "title": "Learn Colors",
+        "icon": "🎨",
+        "items": [
+          { "name": "Red", "hex": "#FF0000", "emoji": "🍎", "example": "Apple" },
+          { "name": "Blue", "hex": "#0000FF", "emoji": "💙", "example": "Sky" },
+          { "name": "Yellow", "hex": "#FFFF00", "emoji": "🌟", "example": "Sun" },
+          { "name": "Green", "hex": "#00FF00", "emoji": "🌳", "example": "Tree" },
+          { "name": "Orange", "hex": "#FFA500", "emoji": "🍊", "example": "Orange" },
+          { "name": "Purple", "hex": "#800080", "emoji": "🍇", "example": "Grapes" },
+          { "name": "Pink", "hex": "#FFC0CB", "emoji": "🌸", "example": "Flower" },
+          { "name": "Brown", "hex": "#A52A2A", "emoji": "🧸", "example": "Bear" },
+          { "name": "Black", "hex": "#000000", "emoji": "🐈‍⬛", "example": "Cat" },
+          { "name": "White", "hex": "#FFFFFF", "emoji": "☁️", "example": "Cloud" },
+          { "name": "Gray", "hex": "#808080", "emoji": "🐘", "example": "Elephant" },
+          { "name": "Turquoise", "hex": "#40E0D0", "emoji": "💠", "example": "Gem" }
+        ]
+      },
+      "games": {
+        "title": "Fun Games",
+        "icon": "🎮",
+        "items": [
+          { "name": "Find the Emoji", "emoji": "🔍", "description": "Can you find the matching emoji?", "type": "matching" },
+          { "name": "Tap the Color", "emoji": "🎨", "description": "Tap the correct color!", "type": "color-tap" },
+          { "name": "Count the Stars", "emoji": "⭐", "description": "How many stars do you see?", "type": "counting" },
+          { "name": "Clap Along", "emoji": "👏", "description": "Clap with the rhythm!", "type": "rhythm" },
+          { "name": "Memory Match", "emoji": "🧠", "description": "Find matching pairs!", "type": "memory" },
+          { "name": "Shape Sorting", "emoji": "🔷", "description": "Sort shapes into groups!", "type": "sorting" },
+          { "name": "Simon Says", "emoji": "👂", "description": "Follow the instructions!", "type": "listening" },
+          { "name": "Counting Race", "emoji": "🏃", "description": "Count as fast as you can!", "type": "speed" },
+          { "name": "Color Hunt", "emoji": "🌈", "description": "Find all the colors!", "type": "search" },
+          { "name": "Puzzle Time", "emoji": "🧩", "description": "Complete the puzzle!", "type": "puzzle" }
+        ]
+      },
+      "letter_games": {
+        "title": "Letter Games",
+        "icon": "🔤",
+        "items": [
+          { 
+            "question": "What letter comes after A?", 
+            "answer": "B", 
+            "emoji": "🔤",
+            "hint": "A, __, C"
+          },
+          { 
+            "question": "What letter comes before C?", 
+            "answer": "B", 
+            "emoji": "🔤",
+            "hint": "A, __, C"
+          },
+          { 
+            "question": "What letter comes after B?", 
+            "answer": "C", 
+            "emoji": "🔤",
+            "hint": "A, B, __"
+          },
+          { 
+            "question": "Fill in: A, B, __, D", 
+            "answer": "C", 
+            "emoji": "🎯",
+            "hint": "What's missing?"
+          },
+          { 
+            "question": "Fill in: __, B, C", 
+            "answer": "A", 
+            "emoji": "🎯",
+            "hint": "What's first?"
+          },
+          { 
+            "question": "What letter comes after D?", 
+            "answer": "E", 
+            "emoji": "🔤",
+            "hint": "D, __, F"
+          },
+          { 
+            "question": "Fill in: C, D, __, F", 
+            "answer": "E", 
+            "emoji": "🎯",
+            "hint": "What's between D and F?"
+          },
+          { 
+            "question": "What letter comes before E?", 
+            "answer": "D", 
+            "emoji": "🔤",
+            "hint": "C, __, E"
+          },
+          { 
+            "question": "Fill in: A, __, C, __, E", 
+            "answer": "B and D", 
+            "emoji": "🎯",
+            "hint": "Two missing letters!"
+          },
+          { 
+            "question": "What letter comes after E?", 
+            "answer": "F", 
+            "emoji": "🔤",
+            "hint": "E, __, G"
+          }
+        ]
+      },
+      "number_games": {
+        "title": "Number Games",
+        "icon": "🔢",
+        "items": [
+          { 
+            "question": "What number comes after 1?", 
+            "answer": "2", 
+            "emoji": "🔢",
+            "visual": "1️⃣ ➡️ ?",
+            "hint": "1, __, 3"
+          },
+          { 
+            "question": "What number comes after 2?", 
+            "answer": "3", 
+            "emoji": "🔢",
+            "visual": "2️⃣ ➡️ ?",
+            "hint": "1, 2, __"
+          },
+          { 
+            "question": "Fill in: 1, 2, __, 4", 
+            "answer": "3", 
+            "emoji": "🎯",
+            "visual": "1️⃣ 2️⃣ ❓ 4️⃣",
+            "hint": "What's missing?"
+          },
+          { 
+            "question": "Fill in: 3, 4, __", 
+            "answer": "5", 
+            "emoji": "🎯",
+            "visual": "3️⃣ 4️⃣ ❓",
+            "hint": "What comes next?"
+          },
+          { 
+            "question": "What comes before 3?", 
+            "answer": "2", 
+            "emoji": "🔢",
+            "visual": "❓ ➡️ 3️⃣",
+            "hint": "__, 3, 4"
+          },
+          { 
+            "question": "What number comes after 5?", 
+            "answer": "6", 
+            "emoji": "🔢",
+            "visual": "5️⃣ ➡️ ?",
+            "hint": "5, __, 7"
+          },
+          { 
+            "question": "Fill in: 4, 5, __, 7", 
+            "answer": "6", 
+            "emoji": "🎯",
+            "visual": "4️⃣ 5️⃣ ❓ 7️⃣",
+            "hint": "What's between 5 and 7?"
+          },
+          { 
+            "question": "What comes before 5?", 
+            "answer": "4", 
+            "emoji": "🔢",
+            "visual": "❓ ➡️ 5️⃣",
+            "hint": "3, __, 5"
+          },
+          { 
+            "question": "Fill in: 6, 7, __", 
+            "answer": "8", 
+            "emoji": "🎯",
+            "visual": "6️⃣ 7️⃣ ❓",
+            "hint": "What comes next?"
+          },
+          { 
+            "question": "Fill in: 1, __, 3, __, 5", 
+            "answer": "2 and 4", 
+            "emoji": "🎯",
+            "visual": "1️⃣ ❓ 3️⃣ ❓ 5️⃣",
+            "hint": "Two missing numbers!"
+          }
+        ]
+      },
+      "picture_quiz": {
+        "title": "Picture Quiz",
+        "icon": "🖼️",
+        "items": [
+          { 
+            "question": "What fruit is this?", 
+            "image": "🍎", 
+            "answer": "Apple",
+            "answerEmoji": "🍎",
+            "options": ["Apple", "Banana", "Orange"]
+          },
+          { 
+            "question": "What animal is this?", 
+            "image": "🐱", 
+            "answer": "Cat",
+            "answerEmoji": "🐱",
+            "options": ["Dog", "Cat", "Bird"]
+          },
+          { 
+            "question": "What shape is this?", 
+            "image": "⭐", 
+            "answer": "Star",
+            "answerEmoji": "⭐",
+            "options": ["Circle", "Star", "Square"]
+          },
+          { 
+            "question": "What color is this?", 
+            "image": "🔴", 
+            "answer": "Red",
+            "answerEmoji": "🔴",
+            "options": ["Blue", "Red", "Green"]
+          },
+          { 
+            "question": "What is this?", 
+            "image": "☀️", 
+            "answer": "Sun",
+            "answerEmoji": "☀️",
+            "options": ["Moon", "Sun", "Star"]
+          },
+          { 
+            "question": "What fruit is this?", 
+            "image": "🍌", 
+            "answer": "Banana",
+            "answerEmoji": "🍌",
+            "options": ["Apple", "Banana", "Grapes"]
+          },
+          { 
+            "question": "What animal is this?", 
+            "image": "🐶", 
+            "answer": "Dog",
+            "answerEmoji": "🐶",
+            "options": ["Cat", "Dog", "Rabbit"]
+          },
+          { 
+            "question": "What vehicle is this?", 
+            "image": "🚗", 
+            "answer": "Car",
+            "answerEmoji": "🚗",
+            "options": ["Bus", "Car", "Bike"]
+          },
+          { 
+            "question": "What is this?", 
+            "image": "🌙", 
+            "answer": "Moon",
+            "answerEmoji": "🌙",
+            "options": ["Sun", "Moon", "Star"]
+          },
+          { 
+            "question": "What shape is this?", 
+            "image": "❤️", 
+            "answer": "Heart",
+            "answerEmoji": "❤️",
+            "options": ["Star", "Heart", "Circle"]
+          }
+        ]
+      },
+      "memory_games": {
+        "title": "Memory Challenge",
+        "icon": "🧠",
+        "items": [
+          { 
+            "question": "Remember these 3 items: 🍎 🍌 🍊. What was first?", 
+            "answer": "Apple (🍎)",
+            "emoji": "🧠",
+            "hint": "Think about the first fruit"
+          },
+          { 
+            "question": "Remember: 🐱 🐶 🐰. What was in the middle?", 
+            "answer": "Dog (🐶)",
+            "emoji": "🧠",
+            "hint": "Between cat and rabbit"
+          },
+          { 
+            "question": "Remember: Red, Blue, Green. What was last?", 
+            "answer": "Green",
+            "emoji": "🧠",
+            "hint": "The third color"
+          },
+          { 
+            "question": "Remember: 1, 2, 3. What was first?", 
+            "answer": "1",
+            "emoji": "🧠",
+            "hint": "The smallest number"
+          },
+          { 
+            "question": "Remember: ⭐ ❤️ ⭕. What was in the middle?", 
+            "answer": "Heart (❤️)",
+            "emoji": "🧠",
+            "hint": "Between star and circle"
+          },
+          { 
+            "question": "Remember: A, B, C, D. What was second?", 
+            "answer": "B",
+            "emoji": "🧠",
+            "hint": "After A, before C"
+          },
+          { 
+            "question": "Remember: 🌞 🌙 ⭐. What was last?", 
+            "answer": "Star (⭐)",
+            "emoji": "🧠",
+            "hint": "After sun and moon"
+          },
+          { 
+            "question": "Remember: Cat, Dog, Bird. What was first?", 
+            "answer": "Cat",
+            "emoji": "🧠",
+            "hint": "Before dog"
+          }
+        ]
+      },
+      "pattern_games": {
+        "title": "Pattern Detective",
+        "icon": "🔍",
+        "items": [
+          { 
+            "question": "What comes next? 🔴 🔵 🔴 🔵 __", 
+            "answer": "Red (🔴)",
+            "emoji": "🔍",
+            "hint": "Red, Blue, Red, Blue..."
+          },
+          { 
+            "question": "What comes next? ⭐ ⭐ ❤️ ⭐ ⭐ __", 
+            "answer": "Heart (❤️)",
+            "emoji": "🔍",
+            "hint": "Star Star Heart pattern"
+          },
+          { 
+            "question": "What comes next? 🍎 🍌 🍎 🍌 __", 
+            "answer": "Apple (🍎)",
+            "emoji": "🔍",
+            "hint": "Apple, Banana repeating"
+          },
+          { 
+            "question": "What comes next? 1, 2, 1, 2, __", 
+            "answer": "1",
+            "emoji": "🔍",
+            "hint": "One, Two pattern"
+          },
+          { 
+            "question": "What comes next? A, B, A, B, __", 
+            "answer": "A",
+            "emoji": "🔍",
+            "hint": "A, B repeating"
+          },
+          { 
+            "question": "What comes next? 🐱 🐶 🐰 🐱 🐶 __", 
+            "answer": "Rabbit (🐰)",
+            "emoji": "🔍",
+            "hint": "Cat, Dog, Rabbit pattern"
+          },
+          { 
+            "question": "What comes next? Big, Small, Big, Small, __", 
+            "answer": "Big",
+            "emoji": "🔍",
+            "hint": "Size pattern"
+          },
+          { 
+            "question": "What comes next? ⭕ ⭕ ⭐ ⭕ ⭕ __", 
+            "answer": "Star (⭐)",
+            "emoji": "🔍",
+            "hint": "Two circles, one star"
+          }
+        ]
+      },
+      "logic_games": {
+        "title": "Logic & Thinking",
+        "icon": "💡",
+        "items": [
+          { 
+            "question": "Which one is different? 🍎 🍎 🍎 🍌", 
+            "answer": "Banana (🍌)",
+            "emoji": "💡",
+            "hint": "Find the one that doesn't match"
+          },
+          { 
+            "question": "Which is the biggest? Small 🐭, Medium 🐱, Big 🐘", 
+            "answer": "Elephant (🐘)",
+            "emoji": "💡",
+            "hint": "Think about size"
+          },
+          { 
+            "question": "Which can fly? 🐱 🐦 🐶", 
+            "answer": "Bird (🐦)",
+            "emoji": "💡",
+            "hint": "Which has wings?"
+          },
+          { 
+            "question": "Which is a fruit? 🚗 🍎 ⚽", 
+            "answer": "Apple (🍎)",
+            "emoji": "💡",
+            "hint": "What can you eat?"
+          },
+          { 
+            "question": "Which number is bigger? 2 or 5?", 
+            "answer": "5",
+            "emoji": "💡",
+            "hint": "Count to find out"
+          },
+          { 
+            "question": "Which one belongs? 🍎 🍌 🍊 🚗", 
+            "answer": "Car (🚗) doesn't belong",
+            "emoji": "💡",
+            "hint": "Three are fruits"
+          },
+          { 
+            "question": "Which is a color? Red, Dog, Happy", 
+            "answer": "Red",
+            "emoji": "💡",
+            "hint": "What can you see?"
+          },
+          { 
+            "question": "Which comes at night? 🌙 ☀️", 
+            "answer": "Moon (🌙)",
+            "emoji": "💡",
+            "hint": "When it's dark"
+          }
+        ]
+      },
+      "counting_games": {
+        "title": "Count & Win",
+        "icon": "🔢",
+        "items": [
+          { 
+            "question": "Count the apples: 🍎 🍎 🍎", 
+            "answer": "3",
+            "emoji": "🔢",
+            "hint": "Count them one by one"
+          },
+          { 
+            "question": "Count the stars: ⭐ ⭐ ⭐ ⭐", 
+            "answer": "4",
+            "emoji": "🔢",
+            "hint": "How many stars?"
+          },
+          { 
+            "question": "Count the hearts: ❤️ ❤️", 
+            "answer": "2",
+            "emoji": "🔢",
+            "hint": "One, two..."
+          },
+          { 
+            "question": "Count the animals: 🐱 🐶 🐰 🐭 🐻", 
+            "answer": "5",
+            "emoji": "🔢",
+            "hint": "Count all of them"
+          },
+          { 
+            "question": "How many circles? ⭕ ⭕ ⭕ ⭕ ⭕ ⭕", 
+            "answer": "6",
+            "emoji": "🔢",
+            "hint": "Count carefully"
+          },
+          { 
+            "question": "Count the balloons: 🎈", 
+            "answer": "1",
+            "emoji": "🔢",
+            "hint": "Just one!"
+          },
+          { 
+            "question": "Count the fruits: 🍎 🍌 🍊 🍇 🍓 🍉 🍒", 
+            "answer": "7",
+            "emoji": "🔢",
+            "hint": "Many fruits!"
+          },
+          { 
+            "question": "How many smiley faces? 😊 😊 😊 😊 😊 😊 😊 😊", 
+            "answer": "8",
+            "emoji": "🔢",
+            "hint": "Count the smiles"
+          }
+        ]
+      },
+      "shape_match": {
+        "title": "Shape Matching",
+        "icon": "🔷",
+        "items": [
+          { 
+            "question": "Which is a circle? ⭕ ⭐ ⬛", 
+            "answer": "Circle (⭕)",
+            "emoji": "🔷",
+            "hint": "Round like a ball"
+          },
+          { 
+            "question": "Which is a star? ⭕ ⭐ ⬛", 
+            "answer": "Star (⭐)",
+            "emoji": "🔷",
+            "hint": "Twinkle twinkle"
+          },
+          { 
+            "question": "Which is a square? ⬛ ⭕ ⭐", 
+            "answer": "Square (⬛)",
+            "emoji": "🔷",
+            "hint": "Has 4 sides"
+          },
+          { 
+            "question": "Which is a heart? ⭐ ❤️ ⭕", 
+            "answer": "Heart (❤️)",
+            "emoji": "🔷",
+            "hint": "Shape of love"
+          },
+          { 
+            "question": "Which is a triangle? 🔺 ⭕ ⬛", 
+            "answer": "Triangle (🔺)",
+            "emoji": "🔷",
+            "hint": "Has 3 sides"
+          },
+          { 
+            "question": "Find the diamond: 🔷 ⭕ ⭐", 
+            "answer": "Diamond (🔷)",
+            "emoji": "🔷",
+            "hint": "Shiny shape"
+          }
+        ]
+      },
+      "color_mix": {
+        "title": "Color Mixing Fun",
+        "icon": "🎨",
+        "items": [
+          { 
+            "question": "Red + Yellow = ?", 
+            "answer": "Orange",
+            "emoji": "🎨",
+            "hint": "Like an orange fruit!"
+          },
+          { 
+            "question": "Blue + Yellow = ?", 
+            "answer": "Green",
+            "emoji": "🎨",
+            "hint": "Like grass!"
+          },
+          { 
+            "question": "Red + Blue = ?", 
+            "answer": "Purple",
+            "emoji": "🎨",
+            "hint": "Like grapes!"
+          },
+          { 
+            "question": "Which color is the sky?", 
+            "answer": "Blue",
+            "emoji": "🎨",
+            "hint": "Look up!"
+          },
+          { 
+            "question": "Which color is grass?", 
+            "answer": "Green",
+            "emoji": "🎨",
+            "hint": "Nature's color"
+          },
+          { 
+            "question": "Which color is the sun?", 
+            "answer": "Yellow",
+            "emoji": "🎨",
+            "hint": "Bright and warm"
+          }
+        ]
+      },
+      "brain_gym": {
+        "title": "Brain Gym Activities",
+        "icon": "🤸",
+        "items": [
+          {
+            "name": "Touch Your Nose",
+            "emoji": "👃",
+            "instruction": "Use your finger to touch your nose gently!",
+            "benefit": "Improves body awareness and coordination",
+            "duration": "Do it 5 times"
+          },
+          {
+            "name": "Clap Your Hands",
+            "emoji": "👏",
+            "instruction": "Clap your hands together! Make a sound!",
+            "benefit": "Develops rhythm and motor skills",
+            "duration": "Clap 10 times"
+          },
+          {
+            "name": "Touch Your Toes",
+            "emoji": "🦶",
+            "instruction": "Bend down and try to touch your toes!",
+            "benefit": "Improves flexibility and balance",
+            "duration": "Try 3 times"
+          },
+          {
+            "name": "Jump Like a Frog",
+            "emoji": "🐸",
+            "instruction": "Jump up and down like a happy frog!",
+            "benefit": "Builds leg strength and coordination",
+            "duration": "Jump 5 times"
+          },
+          {
+            "name": "Arms Like a Bird",
+            "emoji": "🦅",
+            "instruction": "Spread your arms wide like a flying bird!",
+            "benefit": "Develops arm muscles and imagination",
+            "duration": "Flap 10 times"
+          },
+          {
+            "name": "March in Place",
+            "emoji": "🚶",
+            "instruction": "Lift your knees high and march like a soldier!",
+            "benefit": "Improves balance and coordination",
+            "duration": "March for 20 steps"
+          },
+          {
+            "name": "Spin Around",
+            "emoji": "🌀",
+            "instruction": "Spin around slowly in a circle! Not too fast!",
+            "benefit": "Develops spatial awareness",
+            "duration": "Spin 3 times"
+          },
+          {
+            "name": "Touch Left & Right",
+            "emoji": "👈👉",
+            "instruction": "Touch your left ear with right hand, then switch!",
+            "benefit": "Improves cross-brain coordination",
+            "duration": "Do it 5 times each side"
+          },
+          {
+            "name": "Balance on One Foot",
+            "emoji": "🦩",
+            "instruction": "Stand on one foot like a flamingo!",
+            "benefit": "Builds balance and focus",
+            "duration": "Hold for 5 seconds"
+          },
+          {
+            "name": "Make Big Circles",
+            "emoji": "⭕",
+            "instruction": "Make big circles with your arms in the air!",
+            "benefit": "Improves shoulder mobility",
+            "duration": "Make 5 big circles"
+          }
+        ]
+      },
+      "sensory_play": {
+        "title": "Sensory Activities",
+        "icon": "👁️",
+        "items": [
+          {
+            "name": "Listen Carefully",
+            "emoji": "👂",
+            "instruction": "Close your eyes and listen to sounds around you!",
+            "benefit": "Develops auditory processing",
+            "sense": "Hearing"
+          },
+          {
+            "name": "Look and Find",
+            "emoji": "👀",
+            "instruction": "Find something red in the room!",
+            "benefit": "Improves visual discrimination",
+            "sense": "Sight"
+          },
+          {
+            "name": "Soft and Hard",
+            "emoji": "✋",
+            "instruction": "Touch something soft, then something hard!",
+            "benefit": "Develops tactile awareness",
+            "sense": "Touch"
+          },
+          {
+            "name": "Big Breaths",
+            "emoji": "💨",
+            "instruction": "Take a big breath in, then blow it out slowly!",
+            "benefit": "Calms the mind and body",
+            "sense": "Breathing"
+          },
+          {
+            "name": "Smile Big",
+            "emoji": "😊",
+            "instruction": "Make the biggest smile you can!",
+            "benefit": "Releases happy feelings",
+            "sense": "Emotional"
+          },
+          {
+            "name": "Feel the Textures",
+            "emoji": "🤚",
+            "instruction": "Touch different things - smooth, rough, bumpy!",
+            "benefit": "Builds sensory vocabulary",
+            "sense": "Touch"
+          },
+          {
+            "name": "Watch and Follow",
+            "emoji": "👁️",
+            "instruction": "Follow a moving object with just your eyes!",
+            "benefit": "Improves eye tracking",
+            "sense": "Sight"
+          },
+          {
+            "name": "Gentle Hugs",
+            "emoji": "🤗",
+            "instruction": "Give yourself a gentle squeeze hug!",
+            "benefit": "Provides calming pressure",
+            "sense": "Touch"
+          }
+        ]
+      },
+      "movement_games": {
+        "title": "Movement & Dance",
+        "icon": "💃",
+        "items": [
+          {
+            "name": "Dance Like a Star",
+            "emoji": "⭐",
+            "instruction": "Dance and twirl like a shining star!",
+            "benefit": "Creative movement and expression",
+            "music": "Play your favorite song!"
+          },
+          {
+            "name": "Wiggle Like a Worm",
+            "emoji": "🐛",
+            "instruction": "Wiggle your whole body like a wiggly worm!",
+            "benefit": "Full body coordination",
+            "music": "Make it fun and silly!"
+          },
+          {
+            "name": "Freeze Dance",
+            "emoji": "🎵",
+            "instruction": "Dance when music plays, freeze when it stops!",
+            "benefit": "Develops impulse control",
+            "music": "Start and stop music!"
+          },
+          {
+            "name": "Walk Like Animals",
+            "emoji": "🦁",
+            "instruction": "Walk like a lion, hop like a bunny, waddle like a penguin!",
+            "benefit": "Imagination and motor skills",
+            "music": "Try different animals!"
+          },
+          {
+            "name": "Reach for the Sky",
+            "emoji": "☁️",
+            "instruction": "Stretch your arms up high to touch the clouds!",
+            "benefit": "Stretching and flexibility",
+            "music": "Reach as high as you can!"
+          },
+          {
+            "name": "Stomp Your Feet",
+            "emoji": "🦶",
+            "instruction": "Stomp your feet to make loud sounds!",
+            "benefit": "Strength and rhythm",
+            "music": "Make a beat!"
+          },
+          {
+            "name": "Shake It Out",
+            "emoji": "🎉",
+            "instruction": "Shake your hands, shake your feet, shake everything!",
+            "benefit": "Releases energy",
+            "music": "Shake shake shake!"
+          },
+          {
+            "name": "Roll Like a Ball",
+            "emoji": "⚽",
+            "instruction": "Curl up and roll gently on the floor!",
+            "benefit": "Vestibular development",
+            "music": "Roll slowly and safely!"
+          }
+        ]
+      },
+      "coordination_games": {
+        "title": "Hand-Eye Coordination",
+        "icon": "🎯",
+        "items": [
+          {
+            "name": "Catch and Throw",
+            "emoji": "⚾",
+            "instruction": "Throw a soft ball up and try to catch it!",
+            "benefit": "Improves hand-eye coordination",
+            "skill": "Catching"
+          },
+          {
+            "name": "Stack the Blocks",
+            "emoji": "🧱",
+            "instruction": "Stack blocks as high as you can without falling!",
+            "benefit": "Develops fine motor skills",
+            "skill": "Stacking"
+          },
+          {
+            "name": "Point and Touch",
+            "emoji": "☝️",
+            "instruction": "Point to your knee, elbow, shoulder, and touch them!",
+            "benefit": "Body part recognition",
+            "skill": "Body awareness"
+          },
+          {
+            "name": "Draw Big Shapes",
+            "emoji": "✏️",
+            "instruction": "Draw big circles in the air with your finger!",
+            "benefit": "Pre-writing skills",
+            "skill": "Motor control"
+          },
+          {
+            "name": "Copy My Moves",
+            "emoji": "🙆",
+            "instruction": "Watch and copy the movements you see!",
+            "benefit": "Visual learning and memory",
+            "skill": "Imitation"
+          },
+          {
+            "name": "Walk on a Line",
+            "emoji": "➡️",
+            "instruction": "Walk along a line on the floor without stepping off!",
+            "benefit": "Balance and concentration",
+            "skill": "Balance"
+          },
+          {
+            "name": "Open and Close",
+            "emoji": "✊✋",
+            "instruction": "Open your hands wide, then close into fists!",
+            "benefit": "Hand strength",
+            "skill": "Grip control"
+          },
+          {
+            "name": "High Five Practice",
+            "emoji": "🖐️",
+            "instruction": "Practice giving high fives with both hands!",
+            "benefit": "Timing and coordination",
+            "skill": "Coordination"
+          }
+        ]
+      },
+      "brain_boosters": {
+        "title": "Brain Boosters",
+        "icon": "🧠",
+        "items": [
+          {
+            "name": "Copy the Rhythm",
+            "emoji": "🥁",
+            "instruction": "Clap a pattern: Clap-Clap-Pause-Clap. Now you try!",
+            "benefit": "Auditory memory and pattern recognition",
+            "type": "Rhythm"
+          },
+          {
+            "name": "Opposite Game",
+            "emoji": "↕️",
+            "instruction": "When I say UP, you point DOWN! When I say FAST, you say SLOW!",
+            "benefit": "Cognitive flexibility",
+            "type": "Opposites"
+          },
+          {
+            "name": "Sorting Time",
+            "emoji": "🔵🔴",
+            "instruction": "Sort objects by color, size, or shape!",
+            "benefit": "Classification skills",
+            "type": "Sorting"
+          },
+          {
+            "name": "What's Missing?",
+            "emoji": "❓",
+            "instruction": "Show 3 toys, hide one. Which one is missing?",
+            "benefit": "Memory and observation",
+            "type": "Memory"
+          },
+          {
+            "name": "Sing and Learn",
+            "emoji": "🎤",
+            "instruction": "Sing the ABC song or counting song!",
+            "benefit": "Language and memory",
+            "type": "Music"
+          },
+          {
+            "name": "Follow Directions",
+            "emoji": "📋",
+            "instruction": "Follow 2 steps: Touch your head, then clap!",
+            "benefit": "Listening and sequential thinking",
+            "type": "Instructions"
+          },
+          {
+            "name": "Name That Sound",
+            "emoji": "🔊",
+            "instruction": "Listen to sounds and guess what makes them!",
+            "benefit": "Auditory discrimination",
+            "type": "Listening"
+          },
+          {
+            "name": "Story Time",
+            "emoji": "📖",
+            "instruction": "Tell a simple story about your day!",
+            "benefit": "Language development",
+            "type": "Speaking"
+          }
+        ]
+      },
+      "calm_activities": {
+        "title": "Calm & Focus",
+        "icon": "🧘",
+        "items": [
+          {
+            "name": "Belly Breathing",
+            "emoji": "🌬️",
+            "instruction": "Put your hand on your belly. Breathe in slowly, watch it rise!",
+            "benefit": "Calms anxiety and improves focus",
+            "duration": "5 deep breaths"
+          },
+          {
+            "name": "Quiet Time",
+            "emoji": "🤫",
+            "instruction": "Sit quietly and count to 10 in your mind!",
+            "benefit": "Develops self-regulation",
+            "duration": "Count to 10"
+          },
+          {
+            "name": "Gentle Stretches",
+            "emoji": "🤸",
+            "instruction": "Stretch your arms up, down, and to the sides gently!",
+            "benefit": "Releases tension",
+            "duration": "3 stretches"
+          },
+          {
+            "name": "Close Your Eyes",
+            "emoji": "😌",
+            "instruction": "Close your eyes and think of something happy!",
+            "benefit": "Mindfulness and imagination",
+            "duration": "10 seconds"
+          },
+          {
+            "name": "Slow Motion",
+            "emoji": "🐌",
+            "instruction": "Move very slowly like a slow-motion movie!",
+            "benefit": "Body control and patience",
+            "duration": "Move for 30 seconds"
+          },
+          {
+            "name": "Butterfly Hugs",
+            "emoji": "🦋",
+            "instruction": "Cross your arms and tap your shoulders gently!",
+            "benefit": "Self-soothing technique",
+            "duration": "Tap 10 times"
+          },
+          {
+            "name": "Happy Thoughts",
+            "emoji": "💭",
+            "instruction": "Think of 3 things that make you smile!",
+            "benefit": "Positive thinking",
+            "duration": "Think of 3 things"
+          },
+          {
+            "name": "Listen to Nature",
+            "emoji": "🌳",
+            "instruction": "Imagine birds singing and wind blowing!",
+            "benefit": "Imagination and relaxation",
+            "duration": "Listen for 20 seconds"
+          }
+        ]
+      },
+      "music": {
+        "title": "Music Time",
+        "icon": "🎵",
+        "items": [
+          { "name": "ABC Song", "emoji": "🎤", "lyrics": "A B C D E F G, H I J K L M N O P...", "tune": "alphabet" },
+          { "name": "Number Song", "emoji": "🎼", "lyrics": "1 2 3 4 5, Once I caught a fish alive!", "tune": "counting" },
+          { "name": "Color Song", "emoji": "🌈", "lyrics": "Red and yellow and pink and green...", "tune": "colors" },
+          { "name": "Animal Sounds", "emoji": "🎺", "lyrics": "The dog goes woof woof woof!", "tune": "animals" },
+          { "name": "Itsy Bitsy Spider", "emoji": "🕷️", "lyrics": "The itsy bitsy spider climbed up the water spout!", "tune": "spider" },
+          { "name": "Head Shoulders Knees", "emoji": "🎭", "lyrics": "Head, shoulders, knees and toes!", "tune": "body" },
+          { "name": "If You're Happy", "emoji": "😊", "lyrics": "If you're happy and you know it clap your hands!", "tune": "emotions" },
+          { "name": "Five Little Ducks", "emoji": "🦆", "lyrics": "Five little ducks went out one day!", "tune": "ducks" },
+          { "name": "Baa Baa Black Sheep", "emoji": "🐑", "lyrics": "Baa baa black sheep, have you any wool?", "tune": "sheep" },
+          { "name": "Humpty Dumpty", "emoji": "🥚", "lyrics": "Humpty Dumpty sat on a wall!", "tune": "nursery" }
+        ]
+      },
+      "money": {
+        "title": "Learn Money",
+        "icon": "💰",
+        "items": [
+          { "coin": "Penny", "emoji": "🪙", "value": "1 cent", "color": "Brown", "count": 1 },
+          { "coin": "Nickel", "emoji": "🪙", "value": "5 cents", "color": "Silver", "count": 5 },
+          { "coin": "Dime", "emoji": "🪙", "value": "10 cents", "color": "Silver", "count": 10 },
+          { "coin": "Quarter", "emoji": "🪙", "value": "25 cents", "color": "Silver", "count": 25 },
+          { "coin": "Dollar", "emoji": "💵", "value": "100 cents", "color": "Green", "count": 100 }
+        ]
+      },
+      "savings": {
+        "title": "Saving Money",
+        "icon": "🏦",
+        "items": [
+          { "goal": "Buy a Toy", "emoji": "🧸", "tip": "Save a little every day!", "days": "7 days", "amount": "$5" },
+          { "goal": "New Book", "emoji": "📚", "tip": "Put coins in piggy bank!", "days": "10 days", "amount": "$10" },
+          { "goal": "Video Game", "emoji": "🎮", "tip": "Save your allowance!", "days": "4 weeks", "amount": "$20" },
+          { "goal": "Bicycle", "emoji": "🚲", "tip": "Big goals need patience!", "days": "3 months", "amount": "$100" },
+          { "goal": "Help Family", "emoji": "❤️", "tip": "Saving helps others too!", "days": "Always", "amount": "Any" }
+        ]
+      },
+      "vegetables": {
+        "title": "Vegetables",
+        "icon": "🥦",
+        "items": [
+          { "name": "Carrot", "emoji": "🥕", "description": "Orange and crunchy!", "benefit": "Good for eyes" },
+          { "name": "Tomato", "emoji": "🍅", "description": "Red and juicy!", "benefit": "Makes us healthy" },
+          { "name": "Potato", "emoji": "🥔", "description": "Brown and yummy!", "benefit": "Gives us energy" },
+          { "name": "Broccoli", "emoji": "🥦", "description": "Green like a tree!", "benefit": "Makes us strong" },
+          { "name": "Cucumber", "emoji": "🥒", "description": "Green and fresh!", "benefit": "Keeps us cool" },
+          { "name": "Corn", "emoji": "🌽", "description": "Yellow and sweet!", "benefit": "Tastes delicious" },
+          { "name": "Peas", "emoji": "🫛", "description": "Small and green!", "benefit": "Full of goodness" },
+          { "name": "Pumpkin", "emoji": "🎃", "description": "Big and orange!", "benefit": "Fun to eat" },
+          { "name": "Pepper", "emoji": "🫑", "description": "Colorful bell!", "benefit": "Many colors" },
+          { "name": "Onion", "emoji": "🧅", "description": "Makes food tasty!", "benefit": "Adds flavor" }
+        ]
+      },
+      "family": {
+        "title": "Family Members",
+        "icon": "👨‍👩‍👧‍👦",
+        "items": [
+          { "name": "Mom", "emoji": "👩", "description": "She loves and cares for us!", "role": "Takes care of me" },
+          { "name": "Dad", "emoji": "👨", "description": "He protects and plays with us!", "role": "Keeps me safe" },
+          { "name": "Sister", "emoji": "👧", "description": "Fun to play with!", "role": "My friend" },
+          { "name": "Brother", "emoji": "👦", "description": "We share toys together!", "role": "My buddy" },
+          { "name": "Grandma", "emoji": "👵", "description": "Tells amazing stories!", "role": "Gives love" },
+          { "name": "Grandpa", "emoji": "👴", "description": "Plays games with us!", "role": "Makes me smile" }
+        ]
+      },
+      "weather": {
+        "title": "Weather",
+        "icon": "🌤️",
+        "items": [
+          { "name": "Sunny", "emoji": "☀️", "description": "Bright and warm!", "activity": "Play outside" },
+          { "name": "Rainy", "emoji": "🌧️", "description": "Water falls from sky!", "activity": "Use umbrella" },
+          { "name": "Cloudy", "emoji": "☁️", "description": "Fluffy clouds everywhere!", "activity": "Perfect day" },
+          { "name": "Windy", "emoji": "💨", "description": "Air blows strongly!", "activity": "Fly a kite" },
+          { "name": "Snowy", "emoji": "❄️", "description": "White snow falls!", "activity": "Make snowman" }
+        ]
+      },
+      "timeofday": {
+        "title": "Time of Day",
+        "icon": "⏰",
+        "items": [
+          { "name": "Morning", "emoji": "🌅", "description": "Sun comes up!", "activity": "Wake up and breakfast" },
+          { "name": "Afternoon", "emoji": "☀️", "description": "Middle of the day!", "activity": "Play and have lunch" },
+          { "name": "Evening", "emoji": "🌆", "description": "Sun goes down!", "activity": "Dinner time" },
+          { "name": "Night", "emoji": "🌙", "description": "Time to sleep!", "activity": "Sweet dreams" }
+        ]
+      },
+      "emotions": {
+        "title": "Feelings",
+        "icon": "😊",
+        "items": [
+          { "name": "Happy", "emoji": "😊", "description": "Feeling great and smiling!", "when": "When playing" },
+          { "name": "Sad", "emoji": "😢", "description": "Feeling down", "when": "Need a hug" },
+          { "name": "Angry", "emoji": "😠", "description": "Feeling upset", "when": "Take deep breaths" },
+          { "name": "Excited", "emoji": "🤩", "description": "Can't wait!", "when": "Something fun coming" },
+          { "name": "Scared", "emoji": "😰", "description": "Feeling afraid", "when": "It's okay to feel" },
+          { "name": "Surprised", "emoji": "😲", "description": "Wow! Didn't expect that!", "when": "Something unexpected" }
+        ]
+      },
+      "preschool_stories": {
+        "title": "Story Time",
+        "icon": "📖",
+        "items": [
+          {
+            "title": "The Helpful Bunny",
+            "emoji": "🐰",
+            "story": "Benny the Bunny loved to help his friends. One day, he helped a bird find its nest, a squirrel find its acorn, and a turtle cross the road. Everyone thanked Benny!",
+            "moral": "Helping others makes everyone happy!",
+            "lesson": "Be kind and helpful"
+          },
+          {
+            "title": "The Rainbow Fish",
+            "emoji": "🐠",
+            "story": "Rainbow Fish had beautiful shiny scales. He wouldn't share them. He felt lonely. When he started sharing, he made many friends!",
+            "moral": "Sharing brings joy!",
+            "lesson": "Share with friends"
+          },
+          {
+            "title": "The Little Seed",
+            "emoji": "🌱",
+            "story": "A tiny seed was planted. With sunshine, water, and love, it grew into a big beautiful flower. It took time but it never gave up!",
+            "moral": "Growing takes time and care!",
+            "lesson": "Be patient"
+          },
+          {
+            "title": "The Brave Little Ant",
+            "emoji": "🐜",
+            "story": "Annie the ant was very small, but she had a big heart. When a huge leaf blocked the path home, all the big animals said it was impossible to move. But Annie didn't give up! She pushed and pushed, little by little. Soon other ants joined her, and together they moved the leaf!",
+            "moral": "Never give up! Even small efforts can make big changes when we work together!",
+            "lesson": "Perseverance and teamwork"
+          },
+          {
+            "title": "The Kind Lion",
+            "emoji": "🦁",
+            "story": "Leo the Lion was the king of the jungle. One day, a tiny mouse got caught in his mane. Instead of being angry, Leo gently helped the mouse get free. Later, when Leo was trapped in a hunter's net, the little mouse came back and chewed through the ropes to save him!",
+            "moral": "Kindness always comes back to you! No act of kindness is ever too small!",
+            "lesson": "Be kind to everyone"
+          },
+          {
+            "title": "The Honest Woodcutter",
+            "emoji": "🪓",
+            "story": "A poor woodcutter dropped his axe in the river. A magical fairy appeared with a golden axe and asked 'Is this yours?' The woodcutter said 'No, mine was just an old iron axe.' The fairy was so happy with his honesty that she gave him both the golden axe and his old one!",
+            "moral": "Honesty is the best treasure! Always tell the truth!",
+            "lesson": "Always be honest"
+          },
+          {
+            "title": "The Clever Crow",
+            "emoji": "🐦‍⬛",
+            "story": "A thirsty crow found a pot with water at the bottom, but his beak couldn't reach it. Instead of giving up, he had a brilliant idea! He dropped pebbles into the pot, one by one. The water slowly rose up, and finally he could drink!",
+            "moral": "Use your brain! Every problem has a solution if you think creatively!",
+            "lesson": "Think and solve problems"
+          },
+          {
+            "title": "The Grateful Elephant",
+            "emoji": "🐘",
+            "story": "Ella the Elephant had a thorn stuck in her foot and was crying. A small boy was brave enough to help her. He carefully removed the thorn. Years later, when the boy was in danger in the forest, Ella remembered him and came to rescue him!",
+            "moral": "Always remember kindness and help those who helped you!",
+            "lesson": "Be grateful and remember kindness"
+          },
+          {
+            "title": "The Tortoise and the Hare",
+            "emoji": "🐢",
+            "story": "A fast rabbit laughed at a slow tortoise and challenged him to a race. The rabbit was so confident that he took a nap during the race. The tortoise kept moving slowly and steadily. When the rabbit woke up, the tortoise had already won!",
+            "moral": "Slow and steady wins the race! Never give up!",
+            "lesson": "Keep trying, don't give up"
+          },
+          {
+            "title": "The Sharing Squirrel",
+            "emoji": "🐿️",
+            "story": "Sammy Squirrel collected lots of nuts for winter. His friend Freddy didn't have any. Even though Sammy worked hard for his nuts, he shared half with Freddy. When winter came, they both had enough and stayed warm together as friends!",
+            "moral": "Sharing what you have makes friendships stronger!",
+            "lesson": "Share with friends in need"
+          },
+          {
+            "title": "The Magic Words",
+            "emoji": "✨",
+            "story": "Little Maya learned three magic words: Please, Thank You, and Sorry. Whenever she used these words, people smiled and were happy to help her. Her teacher, her parents, and her friends all loved being around her because she was so polite!",
+            "moral": "Good manners are like magic! They make everyone happy!",
+            "lesson": "Use please, thank you, and sorry"
+          },
+          {
+            "title": "The Colorful Butterfly",
+            "emoji": "🦋",
+            "story": "Bella was a caterpillar who felt sad because she couldn't fly like the birds. But her mother told her to be patient. After some time in a cocoon, she emerged as a beautiful butterfly with colorful wings! Now she could fly even more gracefully than the birds!",
+            "moral": "Everyone has their own special time to shine! Be patient and believe in yourself!",
+            "lesson": "Everyone is special in their own way"
+          },
+          {
+            "title": "The Forgiving Friends",
+            "emoji": "👫",
+            "story": "Tommy and Sarah were best friends. One day, Tommy accidentally broke Sarah's favorite toy. He said sorry and felt very sad. Sarah forgave him because she knew accidents happen. They fixed the toy together and became even better friends!",
+            "moral": "True friends forgive each other and solve problems together!",
+            "lesson": "Forgive and stay friends"
+          },
+          {
+            "title": "The Listening Owl",
+            "emoji": "🦉",
+            "story": "Oliver the Owl was very wise because he had a special secret - he listened carefully before speaking. When other animals had problems, Oliver would listen to the whole story first, then give helpful advice. Everyone loved talking to Oliver!",
+            "moral": "Listen carefully to understand! Good listeners make the best friends!",
+            "lesson": "Listen before speaking"
+          },
+          {
+            "title": "The Clean Little Pig",
+            "emoji": "🐷",
+            "story": "Everyone thought pigs loved being dirty, but Penny the Pig loved being clean! She taught other animals that being clean is healthy and fun. She showed them how to wash hands, brush teeth, and keep their homes tidy. Soon, the whole farm was sparkling clean!",
+            "moral": "Cleanliness is important! A clean body and home keep us healthy and happy!",
+            "lesson": "Stay clean and healthy"
+          }
+        ]
+      },
+      "preschool_rhymes": {
+        "title": "Fun Rhymes",
+        "icon": "🎵",
+        "items": [
+          {
+            "title": "Rain Rain Go Away",
+            "emoji": "🌧️",
+            "lyrics": "Rain rain go away, Come again another day! Little children want to play, Rain rain go away!",
+            "action": "Make rain movements with fingers"
+          },
+          {
+            "title": "Five Little Ducks",
+            "emoji": "🦆",
+            "lyrics": "Five little ducks went out one day, Over the hill and far away! Mother duck said 'Quack quack quack quack', But only four little ducks came back!",
+            "action": "Count on fingers"
+          },
+          {
+            "title": "The Wheels on the Bus",
+            "emoji": "🚌",
+            "lyrics": "The wheels on the bus go round and round, Round and round, round and round! The wheels on the bus go round and round, All through the town!",
+            "action": "Roll hands in circles"
+          },
+          {
+            "title": "Twinkle Twinkle Little Star",
+            "emoji": "⭐",
+            "lyrics": "Twinkle twinkle little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky! Twinkle twinkle little star, How I wonder what you are!",
+            "action": "Open and close hands like twinkling stars"
+          },
+          {
+            "title": "Incy Wincy Spider",
+            "emoji": "🕷️",
+            "lyrics": "Incy Wincy Spider climbed up the water spout! Down came the rain and washed the spider out! Out came the sunshine and dried up all the rain, And Incy Wincy Spider climbed up the spout again!",
+            "action": "Make spider movements with fingers"
+          },
+          {
+            "title": "Row Row Row Your Boat",
+            "emoji": "⛵",
+            "lyrics": "Row row row your boat, Gently down the stream! Merrily merrily merrily merrily, Life is but a dream!",
+            "action": "Row with your arms"
+          },
+          {
+            "title": "Old MacDonald",
+            "emoji": "🐄",
+            "lyrics": "Old MacDonald had a farm, E I E I O! And on that farm he had a cow, E I E I O! With a moo moo here and a moo moo there, Here a moo, there a moo, everywhere a moo moo! Old MacDonald had a farm, E I E I O!",
+            "action": "Make animal sounds"
+          },
+          {
+            "title": "If You're Happy",
+            "emoji": "😊",
+            "lyrics": "If you're happy and you know it, clap your hands! If you're happy and you know it, clap your hands! If you're happy and you know it and you really want to show it, If you're happy and you know it, clap your hands!",
+            "action": "Clap your hands"
+          },
+          {
+            "title": "Head Shoulders Knees and Toes",
+            "emoji": "🧒",
+            "lyrics": "Head, shoulders, knees and toes, knees and toes! Head, shoulders, knees and toes, knees and toes! Eyes and ears and mouth and nose! Head, shoulders, knees and toes, knees and toes!",
+            "action": "Touch each body part as you sing"
+          },
+          {
+            "title": "The ABC Song",
+            "emoji": "🔤",
+            "lyrics": "A B C D E F G, H I J K L M N O P, Q R S T U V, W X Y and Z! Now I know my ABCs, Next time won't you sing with me!",
+            "action": "Point to each letter as you sing"
+          },
+          {
+            "title": "Baa Baa Black Sheep",
+            "emoji": "🐑",
+            "lyrics": "Baa baa black sheep, have you any wool? Yes sir, yes sir, three bags full! One for the master, one for the dame, And one for the little boy who lives down the lane!",
+            "action": "Hold up three fingers for three bags"
+          },
+          {
+            "title": "Hickory Dickory Dock",
+            "emoji": "🕐",
+            "lyrics": "Hickory dickory dock, The mouse ran up the clock! The clock struck one, The mouse ran down! Hickory dickory dock!",
+            "action": "Run fingers up and down like a mouse"
+          },
+          {
+            "title": "Humpty Dumpty",
+            "emoji": "🥚",
+            "lyrics": "Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall! All the king's horses and all the king's men, Couldn't put Humpty together again!",
+            "action": "Pretend to fall down gently"
+          },
+          {
+            "title": "Jack and Jill",
+            "emoji": "🏔️",
+            "lyrics": "Jack and Jill went up the hill, To fetch a pail of water! Jack fell down and broke his crown, And Jill came tumbling after!",
+            "action": "Walk fingers up and down"
+          },
+          {
+            "title": "Mary Had a Little Lamb",
+            "emoji": "🐑",
+            "lyrics": "Mary had a little lamb, little lamb, little lamb! Mary had a little lamb, its fleece was white as snow! And everywhere that Mary went, Mary went, Mary went! Everywhere that Mary went, the lamb was sure to go!",
+            "action": "Follow along like a lamb"
+          },
+          {
+            "title": "One Two Buckle My Shoe",
+            "emoji": "👞",
+            "lyrics": "One, two, buckle my shoe! Three, four, knock at the door! Five, six, pick up sticks! Seven, eight, lay them straight! Nine, ten, a big fat hen!",
+            "action": "Count on fingers and do actions"
+          },
+          {
+            "title": "Five Little Monkeys",
+            "emoji": "🐵",
+            "lyrics": "Five little monkeys jumping on the bed, One fell off and bumped his head! Mama called the doctor and the doctor said, No more monkeys jumping on the bed!",
+            "action": "Hold up five fingers and count down"
+          },
+          {
+            "title": "The Muffin Man",
+            "emoji": "🧁",
+            "lyrics": "Do you know the muffin man, the muffin man, the muffin man? Do you know the muffin man, who lives on Drury Lane? Yes I know the muffin man, the muffin man, the muffin man! Yes I know the muffin man, who lives on Drury Lane!",
+            "action": "Clap hands in rhythm"
+          },
+          {
+            "title": "This Little Piggy",
+            "emoji": "🐷",
+            "lyrics": "This little piggy went to market, This little piggy stayed home! This little piggy had roast beef, This little piggy had none! And this little piggy cried wee wee wee all the way home!",
+            "action": "Wiggle each toe or finger"
+          },
+          {
+            "title": "London Bridge",
+            "emoji": "🌉",
+            "lyrics": "London Bridge is falling down, Falling down, falling down! London Bridge is falling down, My fair lady!",
+            "action": "Make a bridge with arms and let it fall"
+          },
+          {
+            "title": "Pat-a-Cake",
+            "emoji": "🎂",
+            "lyrics": "Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can! Pat it and roll it and mark it with B, And put it in the oven for baby and me!",
+            "action": "Clap hands together in rhythm"
+          },
+          {
+            "title": "Ring Around the Rosie",
+            "emoji": "🌹",
+            "lyrics": "Ring around the rosie, A pocket full of posies! Ashes, ashes, We all fall down!",
+            "action": "Hold hands in circle and fall down"
+          },
+          {
+            "title": "The Itsy Bitsy Spider",
+            "emoji": "🕷️",
+            "lyrics": "The itsy bitsy spider climbed up the water spout! Down came the rain and washed the spider out! Out came the sun and dried up all the rain, And the itsy bitsy spider climbed up the spout again!",
+            "action": "Make spider climbing motions"
+          },
+          {
+            "title": "Little Miss Muffet",
+            "emoji": "🕷️",
+            "lyrics": "Little Miss Muffet sat on a tuffet, Eating her curds and whey! Along came a spider who sat down beside her, And frightened Miss Muffet away!",
+            "action": "Pretend to be scared and run away"
+          },
+          {
+            "title": "Hey Diddle Diddle",
+            "emoji": "🐄",
+            "lyrics": "Hey diddle diddle, the cat and the fiddle, The cow jumped over the moon! The little dog laughed to see such sport, And the dish ran away with the spoon!",
+            "action": "Jump up high like the cow"
+          }
+        ]
+      }
+    }
+  },
+  "nursery": {
+    "name": "Nursery",
+    "ageGroup": "3-4 years",
+    "color": "#4ECDC4",
+    "icon": "🌈",
+    "categories": {
+      "alphabets": {
+        "title": "Complete Alphabets",
+        "icon": "📚",
+        "items": [
+          { "letter": "A", "word": "Aeroplane", "emoji": "✈️", "sound": "/a/", "uppercase": "A", "lowercase": "a" },
+          { "letter": "B", "word": "Butterfly", "emoji": "🦋", "sound": "/b/", "uppercase": "B", "lowercase": "b" },
+          { "letter": "C", "word": "Cake", "emoji": "🎂", "sound": "/c/", "uppercase": "C", "lowercase": "c" },
+          { "letter": "D", "word": "Dolphin", "emoji": "🐬", "sound": "/d/", "uppercase": "D", "lowercase": "d" },
+          { "letter": "E", "word": "Eagle", "emoji": "🦅", "sound": "/e/", "uppercase": "E", "lowercase": "e" },
+          { "letter": "F", "word": "Flower", "emoji": "🌸", "sound": "/f/", "uppercase": "F", "lowercase": "f" },
+          { "letter": "G", "word": "Guitar", "emoji": "🎸", "sound": "/g/", "uppercase": "G", "lowercase": "g" },
+          { "letter": "H", "word": "Heart", "emoji": "❤️", "sound": "/h/", "uppercase": "H", "lowercase": "h" },
+          { "letter": "I", "word": "Island", "emoji": "🏝️", "sound": "/i/", "uppercase": "I", "lowercase": "i" },
+          { "letter": "J", "word": "Juice", "emoji": "🧃", "sound": "/j/", "uppercase": "J", "lowercase": "j" },
+          { "letter": "K", "word": "Kite", "emoji": "🪁", "sound": "/k/", "uppercase": "K", "lowercase": "k" },
+          { "letter": "L", "word": "Lion", "emoji": "🦁", "sound": "/l/", "uppercase": "L", "lowercase": "l" },
+          { "letter": "M", "word": "Moon", "emoji": "🌙", "sound": "/m/", "uppercase": "M", "lowercase": "m" },
+          { "letter": "N", "word": "Nest", "emoji": "🪹", "sound": "/n/", "uppercase": "N", "lowercase": "n" },
+          { "letter": "O", "word": "Orange", "emoji": "🍊", "sound": "/o/", "uppercase": "O", "lowercase": "o" },
+          { "letter": "P", "word": "Parrot", "emoji": "🦜", "sound": "/p/", "uppercase": "P", "lowercase": "p" },
+          { "letter": "Q", "word": "Queen", "emoji": "👸", "sound": "/kw/", "uppercase": "Q", "lowercase": "q" },
+          { "letter": "R", "word": "Rainbow", "emoji": "🌈", "sound": "/r/", "uppercase": "R", "lowercase": "r" },
+          { "letter": "S", "word": "Sun", "emoji": "☀️", "sound": "/s/", "uppercase": "S", "lowercase": "s" },
+          { "letter": "T", "word": "Tiger", "emoji": "🐯", "sound": "/t/", "uppercase": "T", "lowercase": "t" },
+          { "letter": "U", "word": "Umbrella", "emoji": "☂️", "sound": "/u/", "uppercase": "U", "lowercase": "u" },
+          { "letter": "V", "word": "Violin", "emoji": "🎻", "sound": "/v/", "uppercase": "V", "lowercase": "v" },
+          { "letter": "W", "word": "Watermelon", "emoji": "🍉", "sound": "/w/", "uppercase": "W", "lowercase": "w" },
+          { "letter": "X", "word": "Xylophone", "emoji": "🎵", "sound": "/ks/", "uppercase": "X", "lowercase": "x" },
+          { "letter": "Y", "word": "Yacht", "emoji": "⛵", "sound": "/y/", "uppercase": "Y", "lowercase": "y" },
+          { "letter": "Z", "word": "Zebra", "emoji": "🦓", "sound": "/z/", "uppercase": "Z", "lowercase": "z" }
+        ]
+      },
+      "numbers": {
+        "title": "Numbers 1-50",
+        "icon": "🔢",
+        "items": [
+          { "number": 1, "word": "One", "emoji": "1️⃣", "visual": "⭐", "counting": 1 },
+          { "number": 2, "word": "Two", "emoji": "2️⃣", "visual": "⭐⭐", "counting": 2 },
+          { "number": 3, "word": "Three", "emoji": "3️⃣", "visual": "⭐⭐⭐", "counting": 3 },
+          { "number": 4, "word": "Four", "emoji": "4️⃣", "visual": "⭐⭐⭐⭐", "counting": 4 },
+          { "number": 5, "word": "Five", "emoji": "5️⃣", "visual": "⭐⭐⭐⭐⭐", "counting": 5 },
+          { "number": 6, "word": "Six", "emoji": "6️⃣", "visual": "⭐⭐⭐⭐⭐⭐", "counting": 6 },
+          { "number": 7, "word": "Seven", "emoji": "7️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐", "counting": 7 },
+          { "number": 8, "word": "Eight", "emoji": "8️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐", "counting": 8 },
+          { "number": 9, "word": "Nine", "emoji": "9️⃣", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐⭐", "counting": 9 },
+          { "number": 10, "word": "Ten", "emoji": "🔟", "visual": "⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐", "counting": 10 },
+          { "number": 11, "word": "Eleven", "emoji": "🔢", "visual": "Count: 11", "counting": 11 },
+          { "number": 12, "word": "Twelve", "emoji": "🔢", "visual": "Count: 12", "counting": 12 },
+          { "number": 13, "word": "Thirteen", "emoji": "🔢", "visual": "Count: 13", "counting": 13 },
+          { "number": 14, "word": "Fourteen", "emoji": "🔢", "visual": "Count: 14", "counting": 14 },
+          { "number": 15, "word": "Fifteen", "emoji": "🔢", "visual": "Count: 15", "counting": 15 },
+          { "number": 16, "word": "Sixteen", "emoji": "🔢", "visual": "Count: 16", "counting": 16 },
+          { "number": 17, "word": "Seventeen", "emoji": "🔢", "visual": "Count: 17", "counting": 17 },
+          { "number": 18, "word": "Eighteen", "emoji": "🔢", "visual": "Count: 18", "counting": 18 },
+          { "number": 19, "word": "Nineteen", "emoji": "🔢", "visual": "Count: 19", "counting": 19 },
+          { "number": 20, "word": "Twenty", "emoji": "🔢", "visual": "Count: 20", "counting": 20 },
+          { "number": 21, "word": "Twenty-One", "emoji": "🔢", "visual": "Count: 21", "counting": 21 },
+          { "number": 22, "word": "Twenty-Two", "emoji": "🔢", "visual": "Count: 22", "counting": 22 },
+          { "number": 23, "word": "Twenty-Three", "emoji": "🔢", "visual": "Count: 23", "counting": 23 },
+          { "number": 24, "word": "Twenty-Four", "emoji": "🔢", "visual": "Count: 24", "counting": 24 },
+          { "number": 25, "word": "Twenty-Five", "emoji": "🔢", "visual": "Count: 25", "counting": 25 },
+          { "number": 26, "word": "Twenty-Six", "emoji": "🔢", "visual": "Count: 26", "counting": 26 },
+          { "number": 27, "word": "Twenty-Seven", "emoji": "🔢", "visual": "Count: 27", "counting": 27 },
+          { "number": 28, "word": "Twenty-Eight", "emoji": "🔢", "visual": "Count: 28", "counting": 28 },
+          { "number": 29, "word": "Twenty-Nine", "emoji": "🔢", "visual": "Count: 29", "counting": 29 },
+          { "number": 30, "word": "Thirty", "emoji": "🔢", "visual": "Count: 30", "counting": 30 },
+          { "number": 31, "word": "Thirty-One", "emoji": "🔢", "visual": "Count: 31", "counting": 31 },
+          { "number": 32, "word": "Thirty-Two", "emoji": "🔢", "visual": "Count: 32", "counting": 32 },
+          { "number": 33, "word": "Thirty-Three", "emoji": "🔢", "visual": "Count: 33", "counting": 33 },
+          { "number": 34, "word": "Thirty-Four", "emoji": "🔢", "visual": "Count: 34", "counting": 34 },
+          { "number": 35, "word": "Thirty-Five", "emoji": "🔢", "visual": "Count: 35", "counting": 35 },
+          { "number": 36, "word": "Thirty-Six", "emoji": "🔢", "visual": "Count: 36", "counting": 36 },
+          { "number": 37, "word": "Thirty-Seven", "emoji": "🔢", "visual": "Count: 37", "counting": 37 },
+          { "number": 38, "word": "Thirty-Eight", "emoji": "🔢", "visual": "Count: 38", "counting": 38 },
+          { "number": 39, "word": "Thirty-Nine", "emoji": "🔢", "visual": "Count: 39", "counting": 39 },
+          { "number": 40, "word": "Forty", "emoji": "🔢", "visual": "Count: 40", "counting": 40 },
+          { "number": 41, "word": "Forty-One", "emoji": "🔢", "visual": "Count: 41", "counting": 41 },
+          { "number": 42, "word": "Forty-Two", "emoji": "🔢", "visual": "Count: 42", "counting": 42 },
+          { "number": 43, "word": "Forty-Three", "emoji": "🔢", "visual": "Count: 43", "counting": 43 },
+          { "number": 44, "word": "Forty-Four", "emoji": "🔢", "visual": "Count: 44", "counting": 44 },
+          { "number": 45, "word": "Forty-Five", "emoji": "🔢", "visual": "Count: 45", "counting": 45 },
+          { "number": 46, "word": "Forty-Six", "emoji": "🔢", "visual": "Count: 46", "counting": 46 },
+          { "number": 47, "word": "Forty-Seven", "emoji": "🔢", "visual": "Count: 47", "counting": 47 },
+          { "number": 48, "word": "Forty-Eight", "emoji": "🔢", "visual": "Count: 48", "counting": 48 },
+          { "number": 49, "word": "Forty-Nine", "emoji": "🔢", "visual": "Count: 49", "counting": 49 },
+          { "number": 50, "word": "Fifty", "emoji": "🔢", "visual": "Count: 50", "counting": 50 }
+        ]
+      },
+      "animals": {
+        "title": "Learn Animals",
+        "icon": "🦁",
+        "items": [
+          { "name": "Lion", "emoji": "🦁", "sound": "Roar!", "habitat": "Forest" },
+          { "name": "Elephant", "emoji": "🐘", "sound": "Trumpet!", "habitat": "Jungle" },
+          { "name": "Monkey", "emoji": "🐵", "sound": "Ooh ooh!", "habitat": "Trees" },
+          { "name": "Fish", "emoji": "🐠", "sound": "Blub blub!", "habitat": "Water" },
+          { "name": "Bird", "emoji": "🐦", "sound": "Tweet tweet!", "habitat": "Sky" },
+          { "name": "Dog", "emoji": "🐕", "sound": "Woof woof!", "habitat": "Home" },
+          { "name": "Cat", "emoji": "🐈", "sound": "Meow!", "habitat": "Home" },
+          { "name": "Cow", "emoji": "🐄", "sound": "Moo!", "habitat": "Farm" },
+          { "name": "Horse", "emoji": "🐴", "sound": "Neigh!", "habitat": "Farm" },
+          { "name": "Pig", "emoji": "🐷", "sound": "Oink!", "habitat": "Farm" },
+          { "name": "Sheep", "emoji": "🐑", "sound": "Baa!", "habitat": "Farm" },
+          { "name": "Duck", "emoji": "🦆", "sound": "Quack!", "habitat": "Pond" },
+          { "name": "Frog", "emoji": "🐸", "sound": "Ribbit!", "habitat": "Pond" },
+          { "name": "Rabbit", "emoji": "🐰", "sound": "Sniff!", "habitat": "Burrow" },
+          { "name": "Tiger", "emoji": "🐯", "sound": "Growl!", "habitat": "Jungle" },
+          { "name": "Bear", "emoji": "🐻", "sound": "Grr!", "habitat": "Forest" },
+          { "name": "Panda", "emoji": "🐼", "sound": "Bleat!", "habitat": "Bamboo Forest" },
+          { "name": "Koala", "emoji": "🐨", "sound": "Grunt!", "habitat": "Tree" },
+          { "name": "Giraffe", "emoji": "🦒", "sound": "Hum!", "habitat": "Savanna" },
+          { "name": "Zebra", "emoji": "🦓", "sound": "Whinny!", "habitat": "Savanna" }
+        ]
+      },
+      "fruits": {
+        "title": "Learn Fruits",
+        "icon": "🍎",
+        "items": [
+          { "name": "Apple", "emoji": "🍎", "color": "Red", "taste": "Sweet" },
+          { "name": "Banana", "emoji": "🍌", "color": "Yellow", "taste": "Sweet" },
+          { "name": "Orange", "emoji": "🍊", "color": "Orange", "taste": "Tangy" },
+          { "name": "Grapes", "emoji": "🍇", "color": "Purple", "taste": "Sweet" },
+          { "name": "Watermelon", "emoji": "🍉", "color": "Green/Red", "taste": "Sweet" },
+          { "name": "Strawberry", "emoji": "🍓", "color": "Red", "taste": "Sweet" },
+          { "name": "Pineapple", "emoji": "🍍", "color": "Yellow", "taste": "Sweet & Tangy" },
+          { "name": "Mango", "emoji": "🥭", "color": "Yellow/Orange", "taste": "Sweet" },
+          { "name": "Peach", "emoji": "🍑", "color": "Orange/Pink", "taste": "Sweet" },
+          { "name": "Pear", "emoji": "🍐", "color": "Green", "taste": "Sweet" },
+          { "name": "Cherry", "emoji": "🍒", "color": "Red", "taste": "Sweet" },
+          { "name": "Lemon", "emoji": "🍋", "color": "Yellow", "taste": "Sour" },
+          { "name": "Coconut", "emoji": "🥥", "color": "Brown", "taste": "Sweet" },
+          { "name": "Kiwi", "emoji": "🥝", "color": "Green", "taste": "Tangy" },
+          { "name": "Blueberry", "emoji": "🫐", "color": "Blue", "taste": "Sweet" }
+        ]
+      },
+      "quiz": {
+        "title": "Fun Quiz",
+        "icon": "❓",
+        "items": [
+          { "question": "What sound does a dog make?", "options": ["Meow", "Woof", "Moo"], "answer": "Woof", "emoji": "🐕" },
+          { "question": "What color is the sun?", "options": ["Blue", "Green", "Yellow"], "answer": "Yellow", "emoji": "☀️" },
+          { "question": "How many eyes do you have?", "options": ["1", "2", "3"], "answer": "2", "emoji": "👀" },
+          { "question": "What does a cat say?", "options": ["Woof", "Meow", "Moo"], "answer": "Meow", "emoji": "🐱" },
+          { "question": "What shape is a ball?", "options": ["Square", "Triangle", "Circle"], "answer": "Circle", "emoji": "⚽" }
+        ]
+      },
+      "activities": {
+        "title": "Fun Activities",
+        "icon": "🎨",
+        "items": [
+          { "name": "Draw a Circle", "emoji": "⭕", "instruction": "Use your finger to draw a circle!", "type": "drawing" },
+          { "name": "Trace the Letter A", "emoji": "✏️", "instruction": "Trace the letter A with your finger!", "type": "tracing" },
+          { "name": "Color the Star", "emoji": "🌟", "instruction": "Tap to color the star!", "type": "coloring" },
+          { "name": "Connect the Dots", "emoji": "🔗", "instruction": "Connect dots 1 to 5!", "type": "connecting" },
+          { "name": "Jump & Count", "emoji": "🦘", "instruction": "Jump 5 times and count!", "type": "physical" }
+        ]
+      },
+      "finance": {
+        "title": "Smart Money Habits",
+        "icon": "💰",
+        "items": [
+          { "concept": "Saving", "emoji": "🏦", "lesson": "Save money in a piggy bank for things you want!", "tip": "Save a little each day", "inspiration": "Every penny counts!" },
+          { "concept": "Spending Wisely", "emoji": "🛒", "lesson": "Think before you buy - Do I really need this?", "tip": "Ask: Need or Want?", "inspiration": "Smart choices make you rich!" },
+          { "concept": "Earning Money", "emoji": "💵", "lesson": "Work hard to earn! Help with chores at home", "tip": "Work = Money!", "inspiration": "Hard work pays off!" },
+          { "concept": "Sharing & Giving", "emoji": "🎁", "lesson": "Share some money to help others who need it", "tip": "Giving makes you happy", "inspiration": "Kindness is wealth!" },
+          { "concept": "Setting Goals", "emoji": "🎯", "lesson": "Decide what you want to save for!", "tip": "Write down your goal", "inspiration": "Dreams come true with saving!" },
+          { "concept": "Patient Waiting", "emoji": "⏰", "lesson": "Good things come to those who wait and save", "tip": "Don't give up!", "inspiration": "Patience makes you strong!" },
+          { "concept": "Counting Money", "emoji": "🪙", "lesson": "Count your savings every week - Watch it grow!", "tip": "Keep track of money", "inspiration": "Seeing growth motivates!" },
+          { "concept": "No Waste", "emoji": "🚫", "lesson": "Don't waste money on things you don't use", "tip": "Think twice!", "inspiration": "Waste not, want not!" },
+          { "concept": "Piggy Bank Power", "emoji": "🐷", "lesson": "Your piggy bank is your friend - Feed it daily!", "tip": "Every day = 1 coin", "inspiration": "Small saves = Big dreams!" },
+          { "concept": "Money Grows", "emoji": "🌱", "lesson": "Money is like a seed - It grows when you save it!", "tip": "Watch it multiply!", "inspiration": "Your future is bright!" }
+        ]
+      },
+      "moneyStories": {
+        "title": "Money Stories",
+        "icon": "📖",
+        "items": [
+          { "title": "The Piggy Bank", "emoji": "🐷", "story": "Mia wanted a new doll. Every day she saved one coin. After 30 days, she had enough!", "moral": "Small saves add up to big wins!", "lesson": "Be patient and consistent" },
+          { "title": "Birthday Money", "emoji": "🎂", "story": "Tom got $10 for his birthday. He saved $5 and spent $5 on ice cream. He felt happy!", "moral": "Save some, enjoy some!", "lesson": "Balance is important" },
+          { "title": "Lemonade Stand", "emoji": "🍋", "story": "Sara sold lemonade and earned $15. She saved it to buy a book she loved!", "moral": "Work hard, earn money, achieve dreams!", "lesson": "Earning feels great" },
+          { "title": "The Broken Toy", "emoji": "🔧", "story": "Jack spent all his money on a cheap toy. It broke in one day. He learned to save for quality!", "moral": "Quality over quantity!", "lesson": "Think before spending" },
+          { "title": "Helping Grandma", "emoji": "👵", "story": "Emma saved $20 and bought flowers for grandma. Grandma was so happy!", "moral": "Money can spread joy!", "lesson": "Sharing is caring" }
+        ]
+      },
+      "moneyGames": {
+        "title": "Money Games",
+        "icon": "🎲",
+        "items": [
+          { "game": "Coin Matching", "emoji": "🪙", "description": "Match pennies, nickels, dimes!", "skill": "Recognition" },
+          { "game": "Counting Challenge", "emoji": "🔢", "description": "Count how many coins!", "skill": "Counting" },
+          { "game": "Save or Spend", "emoji": "🤔", "description": "Choose wisely - save or spend?", "skill": "Decision making" },
+          { "game": "Piggy Bank Fill", "emoji": "🐷", "description": "Fill the piggy bank to reach your goal!", "skill": "Goal setting" },
+          { "game": "Money Math", "emoji": "➕", "description": "Add coins together!", "skill": "Math practice" }
+        ]
+      },
+      "daysofweek": {
+        "title": "Days of the Week",
+        "icon": "📅",
+        "items": [
+          { "day": "Monday", "emoji": "1️⃣", "description": "First day after weekend!", "activity": "Start fresh" },
+          { "day": "Tuesday", "emoji": "2️⃣", "description": "Second day of week!", "activity": "Keep going" },
+          { "day": "Wednesday", "emoji": "3️⃣", "description": "Middle of the week!", "activity": "Halfway there" },
+          { "day": "Thursday", "emoji": "4️⃣", "description": "Almost Friday!", "activity": "Stay strong" },
+          { "day": "Friday", "emoji": "5️⃣", "description": "Last school day!", "activity": "Weekend coming" },
+          { "day": "Saturday", "emoji": "6️⃣", "description": "Fun weekend day!", "activity": "Play and relax" },
+          { "day": "Sunday", "emoji": "7️⃣", "description": "Rest and family day!", "activity": "Get ready for Monday" }
+        ]
+      },
+      "seasons": {
+        "title": "Four Seasons",
+        "icon": "🌺",
+        "items": [
+          { "season": "Spring", "emoji": "🌸", "description": "Flowers bloom and birds sing!", "weather": "Warm and rainy", "activity": "Plant seeds" },
+          { "season": "Summer", "emoji": "☀️", "description": "Hot and sunny days!", "weather": "Very hot", "activity": "Go swimming" },
+          { "season": "Fall", "emoji": "🍂", "description": "Leaves change colors!", "weather": "Cool and breezy", "activity": "Jump in leaves" },
+          { "season": "Winter", "emoji": "❄️", "description": "Cold and snowy!", "weather": "Very cold", "activity": "Build snowman" }
+        ]
+      },
+      "opposites": {
+        "title": "Opposites",
+        "icon": "↔️",
+        "items": [
+          { "word1": "Big", "word2": "Small", "emoji1": "🐘", "emoji2": "🐭", "example": "Elephant is big, mouse is small" },
+          { "word1": "Hot", "word2": "Cold", "emoji1": "🔥", "emoji2": "🧊", "example": "Fire is hot, ice is cold" },
+          { "word1": "Fast", "word2": "Slow", "emoji1": "🐆", "emoji2": "🐢", "example": "Cheetah is fast, turtle is slow" },
+          { "word1": "Happy", "word2": "Sad", "emoji1": "😊", "emoji2": "😢", "example": "Smile when happy, cry when sad" },
+          { "word1": "Up", "word2": "Down", "emoji1": "⬆️", "emoji2": "⬇️", "example": "Birds fly up, rain falls down" },
+          { "word1": "Day", "word2": "Night", "emoji1": "☀️", "emoji2": "🌙", "example": "Sun during day, moon at night" },
+          { "word1": "Full", "word2": "Empty", "emoji1": "🥛", "emoji2": "🫗", "example": "Glass can be full or empty" },
+          { "word1": "Open", "word2": "Closed", "emoji1": "🚪", "emoji2": "🔒", "example": "Door open or closed" },
+          { "word1": "Wet", "word2": "Dry", "emoji1": "💧", "emoji2": "🌵", "example": "Water is wet, desert is dry" },
+          { "word1": "Loud", "word2": "Quiet", "emoji1": "📢", "emoji2": "🤫", "example": "Music is loud, library is quiet" }
+        ]
+      },
+      "clothing": {
+        "title": "Clothing",
+        "icon": "👕",
+        "items": [
+          { "name": "Shirt", "emoji": "👕", "description": "Wear on top!", "when": "Every day" },
+          { "name": "Pants", "emoji": "👖", "description": "Wear on legs!", "when": "Every day" },
+          { "name": "Shoes", "emoji": "👟", "description": "Wear on feet!", "when": "Going outside" },
+          { "name": "Hat", "emoji": "🧢", "description": "Wear on head!", "when": "Sunny days" },
+          { "name": "Socks", "emoji": "🧦", "description": "Keep feet warm!", "when": "With shoes" },
+          { "name": "Dress", "emoji": "👗", "description": "Pretty and comfortable!", "when": "Special occasions" },
+          { "name": "Jacket", "emoji": "🧥", "description": "Keeps you warm!", "when": "Cold weather" },
+          { "name": "Sweater", "emoji": "🧶", "description": "Cozy and warm!", "when": "Winter time" },
+          { "name": "Gloves", "emoji": "🧤", "description": "Warm hands!", "when": "Very cold" },
+          { "name": "Scarf", "emoji": "🧣", "description": "Wrap around neck!", "when": "Keep neck warm" }
+        ]
+      },
+      "helpers": {
+        "title": "Community Helpers",
+        "icon": "👨‍⚕️",
+        "items": [
+          { "name": "Doctor", "emoji": "👨‍⚕️", "description": "Helps when you're sick!", "helps": "Makes you feel better" },
+          { "name": "Teacher", "emoji": "👩‍🏫", "description": "Teaches you new things!", "helps": "Helps you learn" },
+          { "name": "Firefighter", "emoji": "👨‍🚒", "description": "Puts out fires!", "helps": "Keeps us safe" },
+          { "name": "Police Officer", "emoji": "👮", "description": "Protects everyone!", "helps": "Stops bad guys" },
+          { "name": "Farmer", "emoji": "👨‍🌾", "description": "Grows our food!", "helps": "Gives us vegetables" },
+          { "name": "Chef", "emoji": "👨‍🍳", "description": "Cooks delicious food!", "helps": "Makes yummy meals" },
+          { "name": "Mail Carrier", "emoji": "📬", "description": "Delivers letters and packages!", "helps": "Brings mail" },
+          { "name": "Dentist", "emoji": "🦷", "description": "Takes care of teeth!", "helps": "Keeps teeth healthy" }
+        ]
+      },
+      "nursery_stories": {
+        "title": "Story Time",
+        "icon": "📚",
+        "items": [
+          {
+            "title": "The Tortoise and the Hare",
+            "emoji": "🐢",
+            "story": "A fast hare laughed at a slow tortoise. They raced. The hare was so confident, he took a nap. The tortoise kept going slowly and won the race!",
+            "moral": "Slow and steady wins the race!",
+            "lesson": "Never give up"
+          },
+          {
+            "title": "The Ant and the Grasshopper",
+            "emoji": "🐜",
+            "story": "Ant worked hard all summer storing food. Grasshopper just played. When winter came, ant had food but grasshopper was hungry. Ant shared with grasshopper.",
+            "moral": "Work hard and prepare!",
+            "lesson": "Be responsible"
+          },
+          {
+            "title": "The Boy Who Cried Wolf",
+            "emoji": "🐺",
+            "story": "A boy kept lying that a wolf was coming. Villagers came to help but found no wolf. When a real wolf came, no one believed him!",
+            "moral": "Always tell the truth!",
+            "lesson": "Honesty is important"
+          },
+          {
+            "title": "The Golden Egg",
+            "emoji": "🥚",
+            "story": "A farmer had a goose that laid golden eggs. He got greedy and wanted all eggs at once. He killed the goose but found no eggs inside!",
+            "moral": "Be patient and grateful!",
+            "lesson": "Don't be greedy"
+          },
+          {
+            "title": "The Lion and the Mouse",
+            "emoji": "🦁",
+            "story": "A mighty lion caught a tiny mouse. The mouse begged to be free and promised to help. Later, the mouse saved the lion from a hunter's net!",
+            "moral": "Even small friends can help!",
+            "lesson": "Everyone is valuable"
+          }
+        ]
+      },
+      "nursery_rhymes": {
+        "title": "More Rhymes",
+        "icon": "🎼",
+        "items": [
+          {
+            "title": "Baa Baa Black Sheep",
+            "emoji": "🐑",
+            "lyrics": "Baa baa black sheep, have you any wool? Yes sir, yes sir, three bags full! One for the master, one for the dame, And one for the little boy who lives down the lane!",
+            "action": "Count three bags"
+          },
+          {
+            "title": "Hickory Dickory Dock",
+            "emoji": "🕐",
+            "lyrics": "Hickory dickory dock, The mouse ran up the clock! The clock struck one, The mouse ran down, Hickory dickory dock!",
+            "action": "Move hand like clock"
+          },
+          {
+            "title": "Humpty Dumpty",
+            "emoji": "🥚",
+            "lyrics": "Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall! All the king's horses and all the king's men, Couldn't put Humpty together again!",
+            "action": "Fall down gently"
+          },
+          {
+            "title": "Jack and Jill",
+            "emoji": "🪣",
+            "lyrics": "Jack and Jill went up the hill, To fetch a pail of water! Jack fell down and broke his crown, And Jill came tumbling after!",
+            "action": "March up and down"
+          },
+          {
+            "title": "Little Miss Muffet",
+            "emoji": "🕷️",
+            "lyrics": "Little Miss Muffet sat on a tuffet, Eating her curds and whey! Along came a spider, Who sat down beside her, And frightened Miss Muffet away!",
+            "action": "Make spider with fingers"
+          }
+        ]
+      },
+      "coding": {
+        "title": "Coding Fun",
+        "icon": "💻",
+        "items": [
+          { "concept": "Sequence", "emoji": "1️⃣2️⃣3️⃣", "explanation": "Do things in order: 1, then 2, then 3!", "example": "Wake up → Brush teeth → Eat" },
+          { "concept": "Patterns", "emoji": "🔄", "explanation": "Things that repeat: Red, Blue, Red, Blue", "example": "🔴🔵🔴🔵" },
+          { "concept": "If-Then", "emoji": "🤔", "explanation": "If it rains, THEN use umbrella", "example": "IF hungry THEN eat" },
+          { "concept": "Loop", "emoji": "🔁", "explanation": "Do something again and again", "example": "Jump 5 times!" },
+          { "concept": "Debug", "emoji": "🐛", "explanation": "Find and fix mistakes!", "example": "Oops! Try again" }
+        ]
+      },
+      "space": {
+        "title": "Space Adventure",
+        "icon": "🚀",
+        "items": [
+          { "object": "Sun", "emoji": "☀️", "fact": "The Sun is a big, hot star that gives us light!", "distance": "Very far" },
+          { "object": "Moon", "emoji": "🌙", "fact": "The Moon orbits around Earth", "distance": "Far from Earth" },
+          { "object": "Earth", "emoji": "🌍", "fact": "Our home planet with land and water", "distance": "We live here!" },
+          { "object": "Stars", "emoji": "⭐", "fact": "Tiny lights in the night sky, but they're huge!", "distance": "Super far" },
+          { "object": "Rocket", "emoji": "🚀", "fact": "Spaceships that fly to space!", "distance": "Flies very high" },
+          { "object": "Astronaut", "emoji": "👨‍🚀", "fact": "Space explorers who travel to space", "distance": "Goes to space" }
+        ]
+      },
+      "dinosaurs": {
+        "title": "Dinosaurs",
+        "icon": "🦕",
+        "items": [
+          { "name": "T-Rex", "emoji": "🦖", "type": "Meat eater", "size": "Very big!", "fact": "King of dinosaurs with big teeth!" },
+          { "name": "Brontosaurus", "emoji": "🦕", "type": "Plant eater", "size": "Huge!", "fact": "Long neck to eat tall trees" },
+          { "name": "Triceratops", "emoji": "🦏", "type": "Plant eater", "size": "Big", "fact": "Three horns on head!" },
+          { "name": "Pterodactyl", "emoji": "🦅", "type": "Meat eater", "size": "Medium", "fact": "Flying dinosaur with wings!" }
+        ]
+      }
+    }
+  },
+  "lkg": {
+    "name": "LKG (Lower Kindergarten)",
+    "ageGroup": "4-5 years",
+    "color": "#FFE66D",
+    "icon": "🎓",
+    "categories": {
+      "math": {
+        "title": "Basic Math",
+        "icon": "➕",
+        "items": [
+          { "type": "addition", "problem": "1 + 1", "answer": 2, "visual": "🍎 + 🍎 = 🍎🍎" },
+          { "type": "addition", "problem": "2 + 1", "answer": 3, "visual": "⭐⭐ + ⭐ = ⭐⭐⭐" },
+          { "type": "addition", "problem": "2 + 2", "answer": 4, "visual": "🌟🌟 + 🌟🌟 = 🌟🌟🌟🌟" },
+          { "type": "addition", "problem": "3 + 1", "answer": 4, "visual": "🎈🎈🎈 + 🎈 = 🎈🎈🎈🎈" },
+          { "type": "addition", "problem": "3 + 2", "answer": 5, "visual": "🍬🍬🍬 + 🍬🍬 = 🍬🍬🍬🍬🍬" },
+          { "type": "addition", "problem": "4 + 1", "answer": 5, "visual": "💎💎💎💎 + 💎 = 💎💎💎💎💎" },
+          { "type": "addition", "problem": "4 + 2", "answer": 6, "visual": "🌺🌺🌺🌺 + 🌺🌺 = 🌺🌺🌺🌺🌺🌺" },
+          { "type": "addition", "problem": "5 + 1", "answer": 6, "visual": "⚡⚡⚡⚡⚡ + ⚡ = ⚡⚡⚡⚡⚡⚡" },
+          { "type": "addition", "problem": "5 + 2", "answer": 7, "visual": "🎯🎯🎯🎯🎯 + 🎯🎯 = 🎯🎯🎯🎯🎯🎯🎯" },
+          { "type": "addition", "problem": "5 + 3", "answer": 8, "visual": "Count: 5 + 3 = 8" },
+          { "type": "addition", "problem": "5 + 4", "answer": 9, "visual": "Count: 5 + 4 = 9" },
+          { "type": "addition", "problem": "5 + 5", "answer": 10, "visual": "Count: 5 + 5 = 10" },
+          { "type": "subtraction", "problem": "2 - 1", "answer": 1, "visual": "🍎🍎 - 🍎 = 🍎" },
+          { "type": "subtraction", "problem": "3 - 1", "answer": 2, "visual": "🍎🍎🍎 - 🍎 = 🍎🍎" },
+          { "type": "subtraction", "problem": "4 - 2", "answer": 2, "visual": "⭐⭐⭐⭐ - ⭐⭐ = ⭐⭐" },
+          { "type": "subtraction", "problem": "5 - 2", "answer": 3, "visual": "⭐⭐⭐⭐⭐ - ⭐⭐ = ⭐⭐⭐" },
+          { "type": "subtraction", "problem": "4 - 1", "answer": 3, "visual": "🎈🎈🎈🎈 - 🎈 = 🎈🎈🎈" },
+          { "type": "subtraction", "problem": "6 - 3", "answer": 3, "visual": "Count: 6 - 3 = 3" },
+          { "type": "subtraction", "problem": "7 - 2", "answer": 5, "visual": "Count: 7 - 2 = 5" },
+          { "type": "subtraction", "problem": "10 - 5", "answer": 5, "visual": "Count: 10 - 5 = 5" }
+        ]
+      },
+      "numbers100": {
+        "title": "Numbers 51-100",
+        "icon": "💯",
+        "items": [
+          { "number": 51, "word": "Fifty-One", "emoji": "🔢", "visual": "Count: 51", "counting": 51 },
+          { "number": 52, "word": "Fifty-Two", "emoji": "🔢", "visual": "Count: 52", "counting": 52 },
+          { "number": 53, "word": "Fifty-Three", "emoji": "🔢", "visual": "Count: 53", "counting": 53 },
+          { "number": 54, "word": "Fifty-Four", "emoji": "🔢", "visual": "Count: 54", "counting": 54 },
+          { "number": 55, "word": "Fifty-Five", "emoji": "🔢", "visual": "Count: 55", "counting": 55 },
+          { "number": 60, "word": "Sixty", "emoji": "🔢", "visual": "Count: 60", "counting": 60 },
+          { "number": 65, "word": "Sixty-Five", "emoji": "🔢", "visual": "Count: 65", "counting": 65 },
+          { "number": 70, "word": "Seventy", "emoji": "🔢", "visual": "Count: 70", "counting": 70 },
+          { "number": 75, "word": "Seventy-Five", "emoji": "🔢", "visual": "Count: 75", "counting": 75 },
+          { "number": 80, "word": "Eighty", "emoji": "🔢", "visual": "Count: 80", "counting": 80 },
+          { "number": 85, "word": "Eighty-Five", "emoji": "🔢", "visual": "Count: 85", "counting": 85 },
+          { "number": 90, "word": "Ninety", "emoji": "🔢", "visual": "Count: 90", "counting": 90 },
+          { "number": 95, "word": "Ninety-Five", "emoji": "🔢", "visual": "Count: 95", "counting": 95 },
+          { "number": 100, "word": "One Hundred", "emoji": "💯", "visual": "Count: 100!", "counting": 100 }
+        ]
+      },
+      "science": {
+        "title": "Fun Science",
+        "icon": "🔬",
+        "items": [
+          { "topic": "Sun", "emoji": "☀️", "fact": "The Sun gives us light and warmth", "category": "Space" },
+          { "topic": "Moon", "emoji": "🌙", "fact": "The Moon shines at night", "category": "Space" },
+          { "topic": "Stars", "emoji": "⭐", "fact": "Stars twinkle in the night sky", "category": "Space" },
+          { "topic": "Rain", "emoji": "🌧️", "fact": "Rain comes from clouds", "category": "Weather" },
+          { "topic": "Rainbow", "emoji": "🌈", "fact": "Rainbow has 7 colors", "category": "Weather" },
+          { "topic": "Plants", "emoji": "🌱", "fact": "Plants need water and sunlight to grow", "category": "Nature" },
+          { "topic": "Trees", "emoji": "🌳", "fact": "Trees give us oxygen and fruits", "category": "Nature" },
+          { "topic": "Water", "emoji": "💧", "fact": "We need water to drink every day", "category": "Nature" }
+        ]
+      },
+      "words": {
+        "title": "Simple Words",
+        "icon": "📖",
+        "items": [
+          { "word": "CAT", "letters": ["C", "A", "T"], "emoji": "🐱", "syllables": 1 },
+          { "word": "DOG", "letters": ["D", "O", "G"], "emoji": "🐕", "syllables": 1 },
+          { "word": "SUN", "letters": ["S", "U", "N"], "emoji": "☀️", "syllables": 1 },
+          { "word": "BAT", "letters": ["B", "A", "T"], "emoji": "🦇", "syllables": 1 },
+          { "word": "HAT", "letters": ["H", "A", "T"], "emoji": "🎩", "syllables": 1 },
+          { "word": "BUS", "letters": ["B", "U", "S"], "emoji": "🚌", "syllables": 1 }
+        ]
+      },
+      "patterns": {
+        "title": "Fun Patterns",
+        "icon": "🎨",
+        "items": [
+          { "pattern": ["🔴", "🔵", "🔴", "🔵"], "next": "🔴", "type": "colors" },
+          { "pattern": ["⭐", "🌙", "⭐", "🌙"], "next": "⭐", "type": "shapes" },
+          { "pattern": ["🍎", "🍌", "🍎", "🍌"], "next": "🍎", "type": "fruits" },
+          { "pattern": ["1", "2", "1", "2"], "next": "1", "type": "numbers" },
+          { "pattern": ["😊", "😄", "😊", "😄"], "next": "😊", "type": "faces" }
+        ]
+      },
+      "bodyParts": {
+        "title": "Body Parts",
+        "icon": "👶",
+        "items": [
+          { "name": "Eyes", "emoji": "👀", "function": "To see", "count": 2 },
+          { "name": "Ears", "emoji": "👂", "function": "To hear", "count": 2 },
+          { "name": "Nose", "emoji": "👃", "function": "To smell", "count": 1 },
+          { "name": "Mouth", "emoji": "👄", "function": "To eat and speak", "count": 1 },
+          { "name": "Hands", "emoji": "🤲", "function": "To hold things", "count": 2 },
+          { "name": "Legs", "emoji": "🦵", "function": "To walk and run", "count": 2 }
+        ]
+      },
+      "quiz": {
+        "title": "Quiz Time",
+        "icon": "🧠",
+        "items": [
+          { "question": "What is 2 + 2?", "options": ["3", "4", "5"], "answer": "4", "emoji": "➕" },
+          { "question": "Where does a fish live?", "options": ["Tree", "Water", "Sky"], "answer": "Water", "emoji": "🐠" },
+          { "question": "What comes after B?", "options": ["A", "C", "D"], "answer": "C", "emoji": "🔤" },
+          { "question": "How many legs does a cat have?", "options": ["2", "4", "6"], "answer": "4", "emoji": "🐱" },
+          { "question": "What color is grass?", "options": ["Blue", "Green", "Red"], "answer": "Green", "emoji": "🌱" },
+          { "question": "What is 5 - 2?", "options": ["2", "3", "4"], "answer": "3", "emoji": "➖" }
+        ]
+      },
+      "stories": {
+        "title": "Story Time",
+        "icon": "📖",
+        "items": [
+          { "title": "The Happy Sun", "emoji": "☀️", "story": "Once upon a time, the Sun woke up and smiled at everyone!", "moral": "Sharing happiness makes everyone smile!" },
+          { "title": "Counting Stars", "emoji": "⭐", "story": "A little girl counted 5 stars in the sky. 1, 2, 3, 4, 5!", "moral": "Learning to count is fun!" },
+          { "title": "Rainbow Colors", "emoji": "🌈", "story": "After the rain, a beautiful rainbow appeared with 7 colors!", "moral": "Nature is beautiful!" },
+          { "title": "Friendly Animals", "emoji": "🦁", "story": "The lion, elephant, and monkey became best friends!", "moral": "Friends care for each other!" }
+        ]
+      },
+      "rhymes": {
+        "title": "Nursery Rhymes",
+        "icon": "🎵",
+        "items": [
+          { "name": "Twinkle Twinkle", "emoji": "⭐", "rhyme": "Twinkle, twinkle, little star, how I wonder what you are!", "action": "Point to the sky" },
+          { "name": "Wheels on the Bus", "emoji": "🚌", "rhyme": "The wheels on the bus go round and round!", "action": "Move hands in circles" },
+          { "name": "Old MacDonald", "emoji": "🐄", "rhyme": "Old MacDonald had a farm, E-I-E-I-O!", "action": "Make animal sounds" },
+          { "name": "Row Your Boat", "emoji": "⛵", "rhyme": "Row, row, row your boat, gently down the stream!", "action": "Row with arms" }
+        ]
+      },
+      "puzzles": {
+        "title": "Fun Puzzles",
+        "icon": "🧩",
+        "items": [
+          { "name": "Complete the Sequence", "emoji": "🔢", "puzzle": "1, 2, ?, 4", "answer": "3", "hint": "What comes after 2?" },
+          { "name": "Find the Odd One", "emoji": "🎯", "puzzle": "🍎 🍎 🍌 🍎", "answer": "🍌", "hint": "Which one is different?" },
+          { "name": "Match the Pair", "emoji": "👯", "puzzle": "🐱 needs ?", "answer": "🐱", "hint": "Find the match!" },
+          { "name": "Shape Puzzle", "emoji": "🔺", "puzzle": "⭐ ⭕ ⭐ ?", "answer": "⭕", "hint": "What comes next?" }
+        ]
+      },
+      "vehicles": {
+        "title": "Cool Vehicles",
+        "icon": "🚗",
+        "items": [
+          { "name": "Car", "emoji": "🚗", "type": "Road", "sound": "Vroom vroom!", "wheels": 4 },
+          { "name": "Bus", "emoji": "🚌", "type": "Road", "sound": "Beep beep!", "wheels": 4 },
+          { "name": "Train", "emoji": "🚂", "type": "Rail", "sound": "Choo choo!", "wheels": "Many" },
+          { "name": "Airplane", "emoji": "✈️", "type": "Air", "sound": "Whoosh!", "wheels": "Many" },
+          { "name": "Boat", "emoji": "⛵", "type": "Water", "sound": "Splash!", "wheels": 0 },
+          { "name": "Bicycle", "emoji": "🚲", "type": "Road", "sound": "Ring ring!", "wheels": 2 }
+        ]
+      },
+      "computer": {
+        "title": "Computer Basics",
+        "icon": "💻",
+        "items": [
+          { "part": "Computer", "emoji": "💻", "function": "Helps us work and learn", "usage": "Type and play" },
+          { "part": "Mouse", "emoji": "🖱️", "function": "Points and clicks", "usage": "Move cursor" },
+          { "part": "Keyboard", "emoji": "⌨️", "function": "Type letters and numbers", "usage": "Write words" },
+          { "part": "Screen", "emoji": "🖥️", "function": "Shows pictures and words", "usage": "See everything" },
+          { "part": "Tablet", "emoji": "📱", "function": "Touch and learn", "usage": "Apps and games" }
+        ]
+      },
+      "finance": {
+        "title": "Money & Saving",
+        "icon": "💰",
+        "items": [
+          { "concept": "Saving", "emoji": "🏦", "lesson": "Save money in a piggy bank for things you want!", "tip": "Save a little each day" },
+          { "concept": "Spending", "emoji": "🛒", "lesson": "Use money to buy things you need and want", "tip": "Think before you buy" },
+          { "concept": "Earning", "emoji": "💵", "lesson": "Do chores to earn money!", "tip": "Work hard to earn" },
+          { "concept": "Sharing", "emoji": "🎁", "lesson": "Share some money to help others", "tip": "Giving makes you happy" },
+          { "concept": "Counting Money", "emoji": "🪙", "lesson": "1 + 1 + 1 = 3 coins!", "tip": "Practice counting" }
+        ]
+      },
+      "coding": {
+        "title": "Coding Fun",
+        "icon": "👨‍💻",
+        "items": [
+          { "concept": "Sequence", "emoji": "1️⃣2️⃣3️⃣", "explanation": "Do things in order: 1, then 2, then 3!", "example": "Wake up → Brush teeth → Eat" },
+          { "concept": "Patterns", "emoji": "🔄", "explanation": "Things that repeat: Red, Blue, Red, Blue", "example": "🔴🔵🔴🔵" },
+          { "concept": "If-Then", "emoji": "🤔", "explanation": "If it rains, THEN use umbrella", "example": "IF hungry THEN eat" },
+          { "concept": "Loop", "emoji": "🔁", "explanation": "Do something again and again", "example": "Jump 5 times!" },
+          { "concept": "Debug", "emoji": "🐛", "explanation": "Find and fix mistakes!", "example": "Oops! Try again" }
+        ]
+      },
+      "space": {
+        "title": "Space Adventure",
+        "icon": "🚀",
+        "items": [
+          { "object": "Sun", "emoji": "☀️", "fact": "The Sun is a big, hot star that gives us light!", "distance": "Very far" },
+          { "object": "Moon", "emoji": "🌙", "fact": "The Moon orbits around Earth", "distance": "Far from Earth" },
+          { "object": "Earth", "emoji": "🌍", "fact": "Our home planet with land and water", "distance": "We live here!" },
+          { "object": "Stars", "emoji": "⭐", "fact": "Tiny lights in the night sky, but they're huge!", "distance": "Super far" },
+          { "object": "Rocket", "emoji": "🚀", "fact": "Spaceships that fly to space!", "distance": "Flies very high" },
+          { "object": "Astronaut", "emoji": "👨‍🚀", "fact": "Space explorers who travel to space", "distance": "Goes to space" }
+        ]
+      },
+      "dinosaurs": {
+        "title": "Dinosaurs",
+        "icon": "🦕",
+        "items": [
+          { "name": "T-Rex", "emoji": "🦖", "type": "Meat eater", "size": "Very big!", "fact": "King of dinosaurs with big teeth!" },
+          { "name": "Brontosaurus", "emoji": "🦕", "type": "Plant eater", "size": "Huge!", "fact": "Long neck to eat tall trees" },
+          { "name": "Triceratops", "emoji": "🦏", "type": "Plant eater", "size": "Big", "fact": "Three horns on head!" },
+          { "name": "Pterodactyl", "emoji": "🦅", "type": "Meat eater", "size": "Medium", "fact": "Flying dinosaur with wings!" }
+        ]
+      }
+    }
+  }
+}
+

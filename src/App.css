@@ -1,0 +1,107 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page-header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  margin-bottom: 10px;
+  animation: bounce 2s infinite;
+  word-wrap: break-word;
+}
+
+.page-subtitle {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  opacity: 0.9;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  transform: scale(1.1) rotate(-10deg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading animation */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: clamp(2rem, 5vw, 3rem);
+  animation: pulse 1.5s infinite;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .page-header {
+    padding: 30px 15px;
+  }
+
+  .back-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .page-header {
+    padding: 20px 10px;
+  }
+
+  .back-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+    top: 10px;
+    left: 10px;
+  }
+}
+

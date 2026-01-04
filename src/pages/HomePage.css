@@ -1,0 +1,162 @@
+.home-page {
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.level-card {
+  background: white;
+  border-radius: 30px;
+  padding: 40px 25px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.level-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.level-card:hover::before {
+  top: -30%;
+  left: -30%;
+}
+
+.level-icon {
+  font-size: clamp(4rem, 10vw, 6rem);
+  margin-bottom: 20px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.level-name {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.level-age {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.category-count {
+  background: white;
+  color: #667eea;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating decorations */
+.fun-decorations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.6;
+  top: 15%;
+  left: 10%;
+}
+
+.floating-emoji.emoji-2 {
+  top: 25%;
+  left: 85%;
+  font-size: 5rem;
+}
+
+.floating-emoji.emoji-3 {
+  top: 70%;
+  left: 15%;
+  font-size: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 15px;
+  }
+
+  .levels-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .level-card {
+    padding: 35px 20px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .floating-emoji {
+    font-size: 3rem;
+  }
+
+  .floating-emoji.emoji-2,
+  .floating-emoji.emoji-3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .levels-grid {
+    gap: 20px;
+  }
+
+  .level-card {
+    padding: 30px 15px;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+  }
+}
+
