@@ -13,6 +13,10 @@ import PatternGame from '../components/PatternGame'
 import RhymeMatching from '../components/RhymeMatching'
 import SoundRecognition from '../components/SoundRecognition'
 import StoryBuilder from '../components/StoryBuilder'
+import NumberCounting from '../components/NumberCounting'
+import ShapeRecognition from '../components/ShapeRecognition'
+import ColorLearning from '../components/ColorLearning'
+import LetterRecognition from '../components/LetterRecognition'
 import './GamesPage.css'
 
 const GamesPage = () => {
@@ -115,6 +119,39 @@ const GamesPage = () => {
       icon: '🎤',
       description: 'Record your voice',
       component: SpeakingPractice,
+      category: 'Learning'
+    },
+    // NEW LEARNING ACTIVITIES
+    {
+      id: 'numbers',
+      name: 'Number Counting',
+      icon: '🔢',
+      description: 'Count and learn numbers',
+      component: NumberCounting,
+      category: 'Learning'
+    },
+    {
+      id: 'shapes',
+      name: 'Shape Recognition',
+      icon: '🔷',
+      description: 'Learn shapes and forms',
+      component: ShapeRecognition,
+      category: 'Learning'
+    },
+    {
+      id: 'colors',
+      name: 'Color Learning',
+      icon: '🌈',
+      description: 'Identify colors',
+      component: ColorLearning,
+      category: 'Learning'
+    },
+    {
+      id: 'letters',
+      name: 'Letter Recognition',
+      icon: 'ABC',
+      description: 'Learn the alphabet',
+      component: LetterRecognition,
       category: 'Learning'
     }
   ]

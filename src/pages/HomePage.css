@@ -4,6 +4,7 @@
   position: relative;
   overflow-x: hidden;
   box-sizing: border-box;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .top-bar {
@@ -19,14 +20,27 @@
 .stats-display,
 .streak-display,
 .parent-dashboard-btn {
-  padding: 12px 25px;
-  font-size: 1.3rem;
-  font-weight: bold;
+  padding: 10px 20px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 700;
   border: none;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.stats-display:hover,
+.streak-display:hover,
+.parent-dashboard-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.stats-display:active,
+.streak-display:active,
+.parent-dashboard-btn:active {
+  transform: scale(0.98);
 }
 
 .stats-display {
@@ -56,15 +70,23 @@
 
 .level-card {
   background: white;
-  border-radius: 30px;
-  padding: 40px 25px;
+  border-radius: 25px;
+  padding: 35px 25px;
   text-align: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-sizing: border-box;
+}
+
+.level-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.level-card:active {
+  transform: translateY(-2px);
 }
 
 .level-card::before {
@@ -85,23 +107,29 @@
 }
 
 .level-icon {
-  font-size: clamp(4rem, 10vw, 6rem);
+  font-size: clamp(3.5rem, 8vw, 5rem);
   margin-bottom: 20px;
   display: inline-block;
   line-height: 1;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+.level-card:hover .level-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .level-name {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
   color: white;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
+  font-weight: 700;
   word-wrap: break-word;
 }
 
 .level-age {
-  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 20px;
   font-weight: 600;
@@ -110,13 +138,18 @@
 .category-count {
   background: white;
   color: #667eea;
-  padding: 12px 20px;
-  border-radius: 25px;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-weight: 700;
   display: inline-block;
   margin-top: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.category-count:hover {
+  transform: scale(1.05);
 }
 
 /* Games Section */
@@ -130,17 +163,22 @@
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   color: white;
   border: none;
-  padding: 20px 50px;
-  border-radius: 50px;
-  font-size: 24px;
-  font-weight: bold;
+  padding: 18px 40px;
+  border-radius: 30px;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
   transition: all 0.3s ease;
 }
 
 .games-btn:hover {
-  box-shadow: 0 12px 35px rgba(79, 172, 254, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.5);
+}
+
+.games-btn:active {
+  transform: translateY(-1px);
 }
 
 /* Floating decorations */

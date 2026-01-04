@@ -21,20 +21,25 @@ const MemoryGame = ({ items, onComplete }) => {
   const [matched, setMatched] = useState([])
   const [moves, setMoves] = useState(0)
   const [isChecking, setIsChecking] = useState(false)
+  const [initialized, setInitialized] = useState(false)
 
   useEffect(() => {
-    // Create pairs of cards
-    const selectedItems = gameItems.slice(0, 6) // Use 6 items = 12 cards
-    const cardPairs = [...selectedItems, ...selectedItems].map((item, index) => ({
-      id: index,
-      content: item.emoji || item.symbol || item.icon,
-      pairId: item.id || item.name
-    }))
-    
-    // Shuffle cards
-    const shuffled = cardPairs.sort(() => Math.random() - 0.5)
-    setCards(shuffled)
-  }, [gameItems])
+    // Only initialize once
+    if (!initialized) {
+      // Create pairs of cards
+      const selectedItems = gameItems.slice(0, 6) // Use 6 items = 12 cards
+      const cardPairs = [...selectedItems, ...selectedItems].map((item, index) => ({
+        id: index,
+        content: item.emoji || item.symbol || item.icon,
+        pairId: item.id || item.name
+      }))
+      
+      // Shuffle cards
+      const shuffled = cardPairs.sort(() => Math.random() - 0.5)
+      setCards(shuffled)
+      setInitialized(true)
+    }
+  }, [initialized, gameItems])
 
   const handleCardClick = (index) => {
     if (isChecking || flipped.includes(index) || matched.includes(index)) {
@@ -81,6 +86,7 @@ const MemoryGame = ({ items, onComplete }) => {
     setFlipped([])
     setMatched([])
     setMoves(0)
+    setIsChecking(false)
     const shuffled = [...cards].sort(() => Math.random() - 0.5)
     setCards(shuffled)
   }

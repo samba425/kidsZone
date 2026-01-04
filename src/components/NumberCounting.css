@@ -1,0 +1,161 @@
+.number-counting {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 600;
+  color: #555;
+}
+
+.counting-area {
+  background: white;
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  text-align: center;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.objects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  min-height: 200px;
+  align-items: center;
+}
+
+.counting-object {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  animation: float 3s ease-in-out infinite;
+}
+
+.counting-object:nth-child(even) {
+  animation-delay: 0.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.number-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.number-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  padding: 20px 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  min-width: 80px;
+}
+
+.number-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.number-btn:active {
+  transform: translateY(-1px);
+}
+
+.feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px 60px;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+.feedback.correct {
+  border: 5px solid #4caf50;
+}
+
+.feedback.incorrect {
+  border: 5px solid #ff9800;
+}
+
+.feedback-emoji {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feedback p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+}
+
+.stars-earned {
+  color: #f093fb;
+  font-size: 1.8rem !important;
+}
+
+@media (max-width: 768px) {
+  .objects-container {
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .counting-object {
+    font-size: 2.5rem;
+  }
+  
+  .number-options {
+    gap: 10px;
+  }
+  
+  .number-btn {
+    padding: 15px 25px;
+    min-width: 60px;
+  }
+}
