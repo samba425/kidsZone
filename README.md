@@ -4,6 +4,9 @@
 
 A beautiful, interactive educational application with **344+ learning items** across **29 categories**!
 
+## 🌐 Live Demo
+**Try it now:** [https://samba425.github.io/kidsZone/](https://samba425.github.io/kidsZone/)
+
 ## 🔊 NEW! Voice Features Added!
 
 ✨ **Text-to-Speech** now available for:

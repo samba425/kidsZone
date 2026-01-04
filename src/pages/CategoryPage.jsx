@@ -268,39 +268,79 @@ const CategoryPage = () => {
   )
 }
 
-// Helper function to get female voice
+// Helper function to get child-friendly female voice
 const getFemaleVoice = () => {
   const voices = window.speechSynthesis.getVoices()
   
-  // Find a good quality female voice
-  return voices.find(voice => 
-    voice.name.includes('Female') || 
-    voice.name.includes('female') ||
-    voice.name.includes('Woman') ||
-    voice.name.includes('Samantha') || // iOS female voice
-    voice.name.includes('Karen') || // macOS female voice
-    voice.name.includes('Victoria') || // Windows female voice
-    voice.name.includes('Zira') || // Windows female voice
-    voice.name.includes('Google US English Female') ||
-    voice.name.includes('Google UK English Female')
+  // Log all voices to help debug
+  console.log('Available voices:', voices.map(v => `${v.name} (${v.lang})`))
+  
+  // Priority 1: Specific high-quality female voices for kids
+  let voice = voices.find(v => 
+    v.name.includes('Samantha') || // iOS - sounds young and pleasant
+    v.name.includes('Karen') || // macOS - clear and friendly
+    v.name.includes('Tessa') || // South African - clear
+    v.name.includes('Veena') || // Indian English - soft and clear
+    v.name.includes('Moira') || // Irish English - warm and friendly
+    v.name.includes('Fiona') || // Scottish - friendly
+    v.name.includes('Kate') || // UK English
+    v.name.includes('Victoria') || // Windows female voice
+    v.name.includes('Zira') // Windows female voice
   )
+  
+  // Priority 2: Look for any voice with 'female' in the name
+  if (!voice) {
+    voice = voices.find(v => 
+      v.name.toLowerCase().includes('female') ||
+      v.name.toLowerCase().includes('woman')
+    )
+  }
+  
+  // Priority 3: Filter by language code (prefer en-US, en-GB female voices)
+  if (!voice) {
+    voice = voices.find(v => 
+      (v.lang.startsWith('en-') || v.lang.startsWith('en_')) &&
+      !v.name.toLowerCase().includes('male') &&
+      !v.name.toLowerCase().includes('man')
+    )
+  }
+  
+  // Log selected voice
+  if (voice) {
+    console.log('Selected voice:', voice.name, voice.lang)
+  } else {
+    console.log('No specific female voice found, using default')
+  }
+  
+  return voice
 }
 
-// Helper function to speak with nice female voice
-const speakWithVoice = (text, customRate = 0.8) => {
+// Helper function to speak with child girl voice
+const speakWithVoice = (text, customRate = 0.85) => {
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
     
-    const femaleVoice = getFemaleVoice()
-    if (femaleVoice) {
-      utterance.voice = femaleVoice
+    // Wait for voices to load
+    const speak = () => {
+      const utterance = new SpeechSynthesisUtterance(text)
+      
+      const femaleVoice = getFemaleVoice()
+      if (femaleVoice) {
+        utterance.voice = femaleVoice
+      }
+      
+      utterance.rate = customRate // Slightly slower for clarity
+      utterance.pitch = 1.6 // VERY HIGH pitch for little girl voice
+      utterance.volume = 1
+      window.speechSynthesis.speak(utterance)
     }
     
-    utterance.rate = customRate // Normal speed
-    utterance.pitch = 1.2 // Pleasant female pitch
-    utterance.volume = 1
-    window.speechSynthesis.speak(utterance)
+    // Ensure voices are loaded
+    if (window.speechSynthesis.getVoices().length > 0) {
+      speak()
+    } else {
+      window.speechSynthesis.onvoiceschanged = speak
+    }
   }
 }
 
@@ -990,95 +1030,105 @@ const VedicMathCard = ({ item }) => {
 const StoryCard = ({ item }) => {
   const [isReading, setIsReading] = useState(false)
 
-  // Professional storytelling with just voice - no music!
+  // Storytelling with a sweet little girl's voice!
   const tellStoryLikeHuman = () => {
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel()
       setIsReading(true)
       
-      const femaleVoice = getFemaleVoice()
-      let currentPart = 0
-      
-      // Make story parts with MUCH more expression and emotion
-      const storyParts = [
-        { 
-          text: `${item.title}`,
-          rate: 0.65,
-          pitch: 1.5,
-          pause: 1500,
-          emotion: "excited"
-        },
-        { 
-          text: "Let me tell you a wonderful story",
-          rate: 0.55,
-          pitch: 1.3,
-          pause: 1200,
-          emotion: "warm"
-        },
-        { 
-          text: item.story
-            .replace(/\./g, '. ...................... ') // VERY long pause at periods
-            .replace(/!/g, '! ........................ ') // Excitement - long pause
-            .replace(/\?/g, '? ........................ ') // Question - long pause  
-            .replace(/,/g, ', ........ '), // Comma - medium pause
-          rate: 0.5, // Much slower!
-          pitch: 1.3,
-          pause: 2000,
-          emotion: "storytelling"
-        },
-        { 
-          text: "Now, what did we learn from this story?",
-          rate: 0.55,
-          pitch: 1.2,
-          pause: 1000,
-          emotion: "thoughtful"
-        },
-        { 
-          text: item.moral
-            .replace(/!/g, '! .......... ')
-            .replace(/\./g, '. ........ '),
-          rate: 0.6,
-          pitch: 1.4,
-          pause: 500,
-          emotion: "uplifting"
-        },
-        {
-          text: "Wasn't that a beautiful story?",
-          rate: 0.6,
-          pitch: 1.35,
-          pause: 0,
-          emotion: "happy"
+      // Wait for voices to load
+      const startStory = () => {
+        const femaleVoice = getFemaleVoice()
+        let currentPart = 0
+        
+        // Make story parts with MUCH more expression and emotion
+        const storyParts = [
+          { 
+            text: `${item.title}`,
+            rate: 0.7,
+            pitch: 1.65, // HIGHER pitch for little girl voice
+            pause: 1500,
+            emotion: "excited"
+          },
+          { 
+            text: "Let me tell you a wonderful story",
+            rate: 0.6,
+            pitch: 1.5, // Sweet child voice
+            pause: 1200,
+            emotion: "warm"
+          },
+          { 
+            text: item.story
+              .replace(/\./g, '. ...................... ') // VERY long pause at periods
+              .replace(/!/g, '! ........................ ') // Excitement - long pause
+              .replace(/\?/g, '? ........................ ') // Question - long pause  
+              .replace(/,/g, ', ........ '), // Comma - medium pause
+            rate: 0.55, // Slower like a child telling a story
+            pitch: 1.55, // Higher child-like pitch
+            pause: 2000,
+            emotion: "storytelling"
+          },
+          { 
+            text: "Now, what did we learn from this story?",
+            rate: 0.6,
+            pitch: 1.5, // Gentle child voice
+            pause: 1000,
+            emotion: "thoughtful"
+          },
+          { 
+            text: item.moral
+              .replace(/!/g, '! .......... ')
+              .replace(/\./g, '. ........ '),
+            rate: 0.65,
+            pitch: 1.6, // Higher excited child voice
+            pause: 500,
+            emotion: "uplifting"
+          },
+          {
+            text: "Wasn't that a beautiful story?",
+            rate: 0.65,
+            pitch: 1.55, // Happy child voice
+            pause: 0,
+            emotion: "happy"
+          }
+        ]
+        
+        const speakPart = () => {
+          if (currentPart >= storyParts.length) {
+            setIsReading(false)
+            return
+          }
+          
+          const part = storyParts[currentPart]
+          const utterance = new SpeechSynthesisUtterance(part.text)
+          
+          if (femaleVoice) {
+            utterance.voice = femaleVoice
+          }
+          
+          utterance.rate = part.rate
+          utterance.pitch = part.pitch
+          utterance.volume = 1
+          
+          utterance.onend = () => {
+            setTimeout(() => {
+              currentPart++
+              speakPart()
+            }, part.pause)
+          }
+          
+          window.speechSynthesis.speak(utterance)
         }
-      ]
-      
-      const speakPart = () => {
-        if (currentPart >= storyParts.length) {
-          setIsReading(false)
-          return
-        }
         
-        const part = storyParts[currentPart]
-        const utterance = new SpeechSynthesisUtterance(part.text)
-        
-        if (femaleVoice) {
-          utterance.voice = femaleVoice
-        }
-        
-        utterance.rate = part.rate
-        utterance.pitch = part.pitch
-        utterance.volume = 1
-        
-        utterance.onend = () => {
-          setTimeout(() => {
-            currentPart++
-            speakPart()
-          }, part.pause)
-        }
-        
-        window.speechSynthesis.speak(utterance)
+        speakPart()
       }
       
-      speakPart()
+      // Ensure voices are loaded
+      if (window.speechSynthesis.getVoices().length > 0) {
+        startStory()
+      } else {
+        window.speechSynthesis.onvoiceschanged = startStory
+      }
     }
   }
 
@@ -1213,54 +1263,64 @@ const RhymeCard = ({ item }) => {
     }
   }
 
-  // MUCH MORE expressive rhyme singing - like actually singing!
+  // MUCH MORE expressive rhyme singing - like a little girl singing!
   const singRhymeLikeSong = (text) => {
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel()
       setIsReading(true)
       
-      const femaleVoice = getFemaleVoice()
-      
-      // Split into lines for singing
-      const lines = text.split(/[!\n]/).filter(line => line.trim())
-      let currentLine = 0
-      
-      const singNextLine = () => {
-        if (currentLine >= lines.length) {
-          setIsReading(false)
-          return
+      // Wait for voices to load
+      const startSinging = () => {
+        const femaleVoice = getFemaleVoice()
+        
+        // Split into lines for singing
+        const lines = text.split(/[!\n]/).filter(line => line.trim())
+        let currentLine = 0
+        
+        const singNextLine = () => {
+          if (currentLine >= lines.length) {
+            setIsReading(false)
+            return
+          }
+          
+          const line = lines[currentLine].trim()
+          
+          // Make it VERY musical with long pauses
+          const musicalLine = line
+            .replace(/,/g, ', ........................ ') // Very long pause
+            .replace(/!/g, '! .............................. ') // Extra long
+            .replace(/\?/g, '? ........................ ')
+          
+          const utterance = new SpeechSynthesisUtterance(musicalLine)
+          
+          if (femaleVoice) {
+            utterance.voice = femaleVoice
+          }
+          
+          // Make it sound like a sweet little girl singing!
+          utterance.rate = 0.55 + (Math.random() * 0.1) // 0.55-0.65 - Slow and clear like a child
+          utterance.pitch = 1.7 + (Math.random() * 0.15) // 1.7-1.85 - VERY HIGH pitch like a little girl
+          utterance.volume = 1
+          
+          utterance.onend = () => {
+            setTimeout(() => {
+              currentLine++
+              singNextLine()
+            }, 800) // Longer pause between lines
+          }
+          
+          window.speechSynthesis.speak(utterance)
         }
         
-        const line = lines[currentLine].trim()
-        
-        // Make it VERY musical with long pauses
-        const musicalLine = line
-          .replace(/,/g, ', ........................ ') // Very long pause
-          .replace(/!/g, '! .............................. ') // Extra long
-          .replace(/\?/g, '? ........................ ')
-        
-        const utterance = new SpeechSynthesisUtterance(musicalLine)
-        
-        if (femaleVoice) {
-          utterance.voice = femaleVoice
-        }
-        
-        // Make it more song-like!
-        utterance.rate = 0.45 + (Math.random() * 0.1) // 0.45-0.55 - VERY slow!
-        utterance.pitch = 1.45 + (Math.random() * 0.15) // 1.45-1.6 - VERY high, song-like!
-        utterance.volume = 1
-        
-        utterance.onend = () => {
-          setTimeout(() => {
-            currentLine++
-            singNextLine()
-          }, 800) // Longer pause between lines
-        }
-        
-        window.speechSynthesis.speak(utterance)
+        singNextLine()
       }
       
-      singNextLine()
+      // Ensure voices are loaded
+      if (window.speechSynthesis.getVoices().length > 0) {
+        startSinging()
+      } else {
+        window.speechSynthesis.onvoiceschanged = startSinging
+      }
     }
   }
 
