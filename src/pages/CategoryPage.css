@@ -1304,3 +1304,159 @@
   }
 }
 
+/* Vedic Math Card Styles */
+.vedic-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.vedic-trick-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.vedic-description {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.show-steps-button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+  transition: all 0.3s ease;
+}
+
+.show-steps-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+.vedic-steps {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+  backdrop-filter: blur(10px);
+}
+
+.vedic-example {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #FFD700;
+  padding: 10px;
+  background: rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+}
+
+.vedic-step {
+  font-size: 1.05rem;
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #4ECDC4;
+}
+
+.step-number {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.vedic-answer {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  padding: 12px;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.vedic-practice {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  padding: 10px;
+  background: rgba(255, 215, 0, 0.25);
+  border-radius: 10px;
+  color: #FFE66D;
+}
+
+.vedic-hint {
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  font-style: italic;
+  border-left: 3px solid #FFD700;
+}
+
+.vedic-sutra {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(118, 75, 162, 0.5);
+  border-radius: 10px;
+  border-top: 2px dotted #FFD700;
+  font-style: italic;
+}
+
+.speak-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.speak-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.stop-button {
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+
+/* Responsive adjustments for Vedic Math cards */
+@media (max-width: 768px) {
+  .vedic-trick-title {
+    font-size: 1.2rem;
+  }
+  
+  .vedic-description {
+    font-size: 1rem;
+  }
+  
+  .vedic-step {
+    font-size: 0.95rem;
+  }
+  
+  .show-steps-button,
+  .speak-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+

@@ -152,6 +152,8 @@ const CategoryPage = () => {
         return <BrainBoosterCard item={currentItem} />
       case 'calm_activities':
         return <CalmActivityCard item={currentItem} />
+      case 'vedic_maths':
+        return <VedicMathCard item={currentItem} />
       default:
         return <div>Unknown category</div>
     }
@@ -828,6 +830,161 @@ const ActivityCard = ({ item }) => (
     </motion.div>
   </motion.div>
 )
+
+// Component for Vedic Math items
+const VedicMathCard = ({ item }) => {
+  const [showSteps, setShowSteps] = useState(false)
+  const [isReading, setIsReading] = useState(false)
+
+  const speakTrick = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel()
+      setIsReading(true)
+      
+      const femaleVoice = getFemaleVoice()
+      let currentPart = 0
+      
+      // Build the parts to speak
+      const parts = [
+        { text: `${item.trick}!`, rate: 0.7, pitch: 1.3, pause: 1000 },
+        { text: item.description, rate: 0.7, pitch: 1.25, pause: 1200 },
+        { text: `Let's try an example: ${item.example}`, rate: 0.65, pitch: 1.2, pause: 1000 },
+        { text: `Step 1: ${item.step1}`, rate: 0.65, pitch: 1.2, pause: 800 },
+        { text: `Step 2: ${item.step2}`, rate: 0.65, pitch: 1.2, pause: 800 },
+        { text: `Step 3: ${item.step3}`, rate: 0.65, pitch: 1.2, pause: 1000 },
+        { text: `The answer is ${item.answer}!`, rate: 0.7, pitch: 1.35, pause: 1000 },
+        { text: `Now you try: ${item.practice}`, rate: 0.7, pitch: 1.3, pause: 500 }
+      ]
+      
+      // Add hint if exists
+      if (item.hint) {
+        parts.push({ text: `Here's a hint: ${item.hint}`, rate: 0.65, pitch: 1.25, pause: 500 })
+      }
+      
+      // Add sutra if exists
+      if (item.sutra) {
+        parts.push({ text: `This uses the Vedic sutra: ${item.sutra}`, rate: 0.65, pitch: 1.3, pause: 0 })
+      }
+      
+      const speakPart = () => {
+        if (currentPart >= parts.length) {
+          setIsReading(false)
+          return
+        }
+        
+        const part = parts[currentPart]
+        const utterance = new SpeechSynthesisUtterance(part.text)
+        
+        if (femaleVoice) {
+          utterance.voice = femaleVoice
+        }
+        
+        utterance.rate = part.rate
+        utterance.pitch = part.pitch
+        utterance.volume = 1
+        
+        utterance.onend = () => {
+          setTimeout(() => {
+            currentPart++
+            speakPart()
+          }, part.pause)
+        }
+        
+        window.speechSynthesis.speak(utterance)
+      }
+      
+      speakPart()
+    }
+  }
+
+  const stopReading = () => {
+    window.speechSynthesis.cancel()
+    setIsReading(false)
+  }
+
+  return (
+    <motion.div className="vedic-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ rotate: [0, 5, -5, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="vedic-trick-title">{item.trick}</div>
+      <div className="vedic-description">{item.description}</div>
+      
+      <motion.button
+        className="show-steps-button"
+        onClick={() => setShowSteps(!showSteps)}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {showSteps ? '🔼 Hide Steps' : '🔽 Show Example'}
+      </motion.button>
+      
+      {showSteps && (
+        <motion.div 
+          className="vedic-steps"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+        >
+          <div className="vedic-example">
+            <strong>Example:</strong> {item.example}
+          </div>
+          <div className="vedic-step">
+            <span className="step-number">1️⃣</span> {item.step1}
+          </div>
+          <div className="vedic-step">
+            <span className="step-number">2️⃣</span> {item.step2}
+          </div>
+          <div className="vedic-step">
+            <span className="step-number">3️⃣</span> {item.step3}
+          </div>
+          <div className="vedic-answer">
+            <strong>✅ Answer:</strong> {item.answer}
+          </div>
+          <div className="vedic-practice">
+            <strong>🎯 Practice:</strong> {item.practice}
+          </div>
+          {item.hint && (
+            <div className="vedic-hint">
+              <strong>💡 Hint:</strong> {item.hint}
+            </div>
+          )}
+          {item.sutra && (
+            <div className="vedic-sutra">
+              <strong>📖 Sutra:</strong> {item.sutra}
+            </div>
+          )}
+        </motion.div>
+      )}
+      
+      <div className="voice-buttons" style={{ marginTop: '10px' }}>
+        {!isReading ? (
+          <motion.button
+            className="speak-button"
+            onClick={speakTrick}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            🎤 Explain Trick
+          </motion.button>
+        ) : (
+          <motion.button
+            className="speak-button stop-button"
+            onClick={stopReading}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            ⏸️ Stop
+          </motion.button>
+        )}
+      </div>
+    </motion.div>
+  )
+}
 
 // Component for Story items
 const StoryCard = ({ item }) => {
