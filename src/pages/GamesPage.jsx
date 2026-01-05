@@ -17,6 +17,7 @@ import NumberCounting from '../components/NumberCounting'
 import ShapeRecognition from '../components/ShapeRecognition'
 import ColorLearning from '../components/ColorLearning'
 import LetterRecognition from '../components/LetterRecognition'
+import LetterTracing from '../components/LetterTracing'
 import './GamesPage.css'
 
 const GamesPage = () => {
@@ -152,6 +153,14 @@ const GamesPage = () => {
       icon: 'ABC',
       description: 'Learn the alphabet',
       component: LetterRecognition,
+      category: 'Learning'
+    },
+    {
+      id: 'tracing',
+      name: 'Letter Tracing',
+      icon: '✏️',
+      description: 'Trace letters A-Z',
+      component: LetterTracing,
       category: 'Learning'
     }
   ]

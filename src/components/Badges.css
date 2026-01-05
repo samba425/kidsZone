@@ -1,0 +1,213 @@
+.badges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+  min-height: 100vh;
+}
+
+.badges-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.badges-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.total-stars {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.badges-count {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #666;
+}
+
+.next-badge-progress {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.next-badge-progress h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  background: rgba(255,255,255,0.3);
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  height: 100%;
+  border-radius: 15px;
+  transition: width 0.5s ease;
+}
+
+.next-badge-progress p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  opacity: 0.95;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.badge {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.badge.unlocked {
+  border: 3px solid #4caf50;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+}
+
+.badge.locked {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  border: 3px solid #ccc;
+}
+
+.badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.badge-icon {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 0.8rem;
+}
+
+.badge-name {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.badge-description {
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  color: #666;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.badge-requirement {
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: #667eea;
+  font-weight: bold;
+}
+
+.badge-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.badge-modal {
+  background: white;
+  border-radius: 30px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  border: 5px solid #ffd700;
+}
+
+.badge-modal h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.new-badge-icon {
+  font-size: clamp(4rem, 8vw, 6rem);
+  margin: 1rem 0;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.badge-modal h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.badge-modal p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.close-modal-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-shadow: 0 5px 20px rgba(102,126,234,0.4);
+}
+
+.close-modal-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102,126,234,0.5);
+}
+
+.close-modal-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .badges-container {
+    padding: 1rem;
+  }
+
+  .badges-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .badge {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,210 @@
+.letter-tracing {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tracing-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tracing-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #555;
+  font-weight: 600;
+}
+
+.current-letter-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 25px;
+}
+
+.nav-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+.letter-info {
+  text-align: center;
+  color: white;
+}
+
+.big-letter {
+  display: block;
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 900;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.letter-number {
+  display: block;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.tracing-area {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.tracing-canvas {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 1;
+  border: 4px dashed #ddd;
+  border-radius: 20px;
+  cursor: crosshair;
+  touch-action: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.progress-indicator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+  border-radius: 15px;
+}
+
+.progress-text {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  color: #667eea;
+}
+
+.tracing-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+  transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(240, 147, 251, 0.5);
+}
+
+.control-btn:active {
+  transform: translateY(-1px);
+}
+
+.clear-btn {
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+}
+
+.next-btn {
+  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+}
+
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 40px 60px;
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+  border: 5px solid #4caf50;
+}
+
+.success-emoji {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+}
+
+.stars-earned {
+  color: #f093fb;
+  font-size: 1.8rem !important;
+}
+
+@media (max-width: 768px) {
+  .current-letter-display {
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .nav-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .tracing-area {
+    padding: 20px;
+  }
+  
+  .tracing-canvas {
+    max-width: 100%;
+  }
+}

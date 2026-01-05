@@ -1426,6 +1426,109 @@
             "practice": "What is 4's friend to make 10?"
           }
         ]
+      },
+      "days_of_week": {
+        "title": "Days of the Week",
+        "icon": "📅",
+        "items": [
+          { "day": "Monday", "emoji": "📚", "activity": "School day!", "order": 1, "abbreviation": "Mon" },
+          { "day": "Tuesday", "emoji": "🎨", "activity": "Art class!", "order": 2, "abbreviation": "Tue" },
+          { "day": "Wednesday", "emoji": "⚽", "activity": "Sports day!", "order": 3, "abbreviation": "Wed" },
+          { "day": "Thursday", "emoji": "🎵", "activity": "Music time!", "order": 4, "abbreviation": "Thu" },
+          { "day": "Friday", "emoji": "🎉", "activity": "Fun Friday!", "order": 5, "abbreviation": "Fri" },
+          { "day": "Saturday", "emoji": "🏠", "activity": "Weekend fun!", "order": 6, "abbreviation": "Sat" },
+          { "day": "Sunday", "emoji": "☀️", "activity": "Family day!", "order": 7, "abbreviation": "Sun" }
+        ]
+      },
+      "months": {
+        "title": "Months of the Year",
+        "icon": "🗓️",
+        "items": [
+          { "month": "January", "emoji": "❄️", "season": "Winter", "order": 1, "abbreviation": "Jan", "days": 31 },
+          { "month": "February", "emoji": "💝", "season": "Winter", "order": 2, "abbreviation": "Feb", "days": 28 },
+          { "month": "March", "emoji": "🌸", "season": "Spring", "order": 3, "abbreviation": "Mar", "days": 31 },
+          { "month": "April", "emoji": "🌧️", "season": "Spring", "order": 4, "abbreviation": "Apr", "days": 30 },
+          { "month": "May", "emoji": "🌺", "season": "Spring", "order": 5, "abbreviation": "May", "days": 31 },
+          { "month": "June", "emoji": "☀️", "season": "Summer", "order": 6, "abbreviation": "Jun", "days": 30 },
+          { "month": "July", "emoji": "🏖️", "season": "Summer", "order": 7, "abbreviation": "Jul", "days": 31 },
+          { "month": "August", "emoji": "🌻", "season": "Summer", "order": 8, "abbreviation": "Aug", "days": 31 },
+          { "month": "September", "emoji": "🍂", "season": "Fall", "order": 9, "abbreviation": "Sep", "days": 30 },
+          { "month": "October", "emoji": "🎃", "season": "Fall", "order": 10, "abbreviation": "Oct", "days": 31 },
+          { "month": "November", "emoji": "🍁", "season": "Fall", "order": 11, "abbreviation": "Nov", "days": 30 },
+          { "month": "December", "emoji": "🎄", "season": "Winter", "order": 12, "abbreviation": "Dec", "days": 31 }
+        ]
+      },
+      "seasons": {
+        "title": "Four Seasons",
+        "icon": "🌈",
+        "items": [
+          { "season": "Spring", "emoji": "🌸", "months": ["March", "April", "May"], "weather": "Warm and rainy", "activities": "Plant flowers, fly kites" },
+          { "season": "Summer", "emoji": "☀️", "months": ["June", "July", "August"], "weather": "Hot and sunny", "activities": "Swimming, beach fun" },
+          { "season": "Fall", "emoji": "🍂", "months": ["September", "October", "November"], "weather": "Cool and breezy", "activities": "Collect leaves, harvest" },
+          { "season": "Winter", "emoji": "❄️", "months": ["December", "January", "February"], "weather": "Cold and snowy", "activities": "Build snowmen, stay warm" }
+        ]
+      },
+      "body_parts": {
+        "title": "Body Parts",
+        "icon": "👶",
+        "items": [
+          { "part": "Head", "emoji": "🧠", "function": "Thinking and learning", "count": 1 },
+          { "part": "Eyes", "emoji": "👀", "function": "Seeing the world", "count": 2 },
+          { "part": "Nose", "emoji": "👃", "function": "Smelling things", "count": 1 },
+          { "part": "Mouth", "emoji": "👄", "function": "Eating and talking", "count": 1 },
+          { "part": "Ears", "emoji": "👂", "function": "Hearing sounds", "count": 2 },
+          { "part": "Hands", "emoji": "🤲", "function": "Touching and holding", "count": 2 },
+          { "part": "Fingers", "emoji": "🤟", "function": "Grabbing small things", "count": 10 },
+          { "part": "Legs", "emoji": "🦵", "function": "Walking and running", "count": 2 },
+          { "part": "Feet", "emoji": "👣", "function": "Standing and jumping", "count": 2 },
+          { "part": "Toes", "emoji": "🦶", "function": "Balancing", "count": 10 },
+          { "part": "Hair", "emoji": "💇", "function": "Keeping head warm", "count": "Many" },
+          { "part": "Teeth", "emoji": "🦷", "function": "Chewing food", "count": "Many" }
+        ]
+      },
+      "family_members": {
+        "title": "My Family Members",
+        "icon": "👨‍👩‍👧‍👦",
+        "items": [
+          { "member": "Mother", "emoji": "👩", "role": "Takes care of you", "call": "Mom, Mommy, Mama" },
+          { "member": "Father", "emoji": "👨", "role": "Protects and provides", "call": "Dad, Daddy, Papa" },
+          { "member": "Sister", "emoji": "👧", "role": "Your girl sibling", "call": "Sis, Big/Little Sister" },
+          { "member": "Brother", "emoji": "👦", "role": "Your boy sibling", "call": "Bro, Big/Little Brother" },
+          { "member": "Grandmother", "emoji": "👵", "role": "Parent's mother", "call": "Grandma, Nana, Granny" },
+          { "member": "Grandfather", "emoji": "👴", "role": "Parent's father", "call": "Grandpa, Papa, Gramps" },
+          { "member": "Baby", "emoji": "👶", "role": "Youngest family member", "call": "Baby" },
+          { "member": "Pet", "emoji": "🐕", "role": "Family friend", "call": "Dog, Cat, Pet" }
+        ]
+      },
+      "opposites": {
+        "title": "Learn Opposites",
+        "icon": "⚖️",
+        "items": [
+          { "word1": "Big", "emoji1": "🐘", "word2": "Small", "emoji2": "🐁", "example": "Elephant is big, mouse is small" },
+          { "word1": "Hot", "emoji1": "🔥", "word2": "Cold", "emoji2": "❄️", "example": "Fire is hot, ice is cold" },
+          { "word1": "Happy", "emoji1": "😊", "word2": "Sad", "emoji2": "😢", "example": "Smile when happy, cry when sad" },
+          { "word1": "Fast", "emoji1": "🐆", "word2": "Slow", "emoji2": "🐢", "example": "Cheetah is fast, turtle is slow" },
+          { "word1": "Up", "emoji1": "⬆️", "word2": "Down", "emoji2": "⬇️", "example": "Birds fly up, roots grow down" },
+          { "word1": "Day", "emoji1": "☀️", "word2": "Night", "emoji2": "🌙", "example": "Sun in day, moon at night" },
+          { "word1": "Wet", "emoji1": "💧", "word2": "Dry", "emoji2": "🏜️", "example": "Water is wet, desert is dry" },
+          { "word1": "Full", "emoji1": "🥤", "word2": "Empty", "emoji2": "🔳", "example": "Full cup, empty cup" },
+          { "word1": "Clean", "emoji1": "✨", "word2": "Dirty", "emoji2": "🧹", "example": "Wash to be clean" },
+          { "word1": "Loud", "emoji1": "🔊", "word2": "Quiet", "emoji2": "🔇", "example": "Music is loud, whisper is quiet" }
+        ]
+      },
+      "prepositions": {
+        "title": "Position Words",
+        "icon": "📍",
+        "items": [
+          { "word": "In", "emoji": "📦", "example": "The toy is IN the box", "visual": "🎁 in 📦" },
+          { "word": "On", "emoji": "📚", "example": "The book is ON the table", "visual": "📖 on 🪑" },
+          { "word": "Under", "emoji": "⬇️", "example": "The cat is UNDER the bed", "visual": "🐱 under 🛏️" },
+          { "word": "Over", "emoji": "⬆️", "example": "The bird flies OVER the tree", "visual": "🐦 over 🌳" },
+          { "word": "Next to", "emoji": "👥", "example": "Stand NEXT TO your friend", "visual": "👦👧" },
+          { "word": "Behind", "emoji": "🚪", "example": "Hide BEHIND the door", "visual": "Door hides you" },
+          { "word": "In front of", "emoji": "🎭", "example": "Stand IN FRONT OF the class", "visual": "First position" },
+          { "word": "Between", "emoji": "🥪", "example": "You are BETWEEN mom and dad", "visual": "👩👶👨" }
+        ]
       }
     }
   },

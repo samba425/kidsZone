@@ -141,6 +141,56 @@ const HomePage = () => {
           <p className="page-subtitle">Choose Your Learning Adventure!</p>
         </motion.div>
 
+        {/* Quick Actions */}
+        <motion.div 
+          className="quick-actions"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <motion.button
+            className="quick-action-btn daily-lesson-btn"
+            onClick={() => {
+              playClickSound()
+              navigate('/daily-lesson')
+            }}
+            onMouseEnter={playHoverSound}
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="btn-icon">📚</div>
+            <div className="btn-text">Today's Lesson</div>
+          </motion.button>
+
+          <motion.button
+            className="quick-action-btn badges-btn"
+            onClick={() => {
+              playClickSound()
+              navigate('/badges')
+            }}
+            onMouseEnter={playHoverSound}
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="btn-icon">🏅</div>
+            <div className="btn-text">My Badges</div>
+          </motion.button>
+
+          <motion.button
+            className="quick-action-btn games-btn"
+            onClick={() => {
+              playClickSound()
+              navigate('/games')
+            }}
+            onMouseEnter={playHoverSound}
+            whileHover={{ scale: 1.05, y: -5 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <div className="btn-icon">🎮</div>
+            <div className="btn-text">All Games</div>
+          </motion.button>
+        </motion.div>
+
         <motion.div 
           className="levels-grid"
           variants={containerVariants}

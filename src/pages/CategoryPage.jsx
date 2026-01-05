@@ -124,11 +124,20 @@ const CategoryPage = () => {
       case 'emotions':
         return <EmotionCard item={currentItem} />
       case 'daysofweek':
+      case 'days_of_week':
         return <DayOfWeekCard item={currentItem} />
+      case 'months':
+        return <MonthCard item={currentItem} />
       case 'seasons':
         return <SeasonCard item={currentItem} />
+      case 'body_parts':
+        return <BodyPartCard item={currentItem} />
+      case 'family_members':
+        return <FamilyCard item={currentItem} />
       case 'opposites':
         return <OppositeCard item={currentItem} />
+      case 'prepositions':
+        return <PrepositionCard item={currentItem} />
       case 'clothing':
         return <ClothingCard item={currentItem} />
       case 'helpers':
@@ -2160,6 +2169,80 @@ const SeasonCard = ({ item }) => {
         whileTap={{ scale: 0.9 }}
       >
         🔊 Read About Season
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Month items
+const MonthCard = ({ item }) => {
+  const speakMonth = () => {
+    speakWithVoice(`${item.month}. ${item.emoji}. Season: ${item.season}. It has ${item.days} days.`, 0.8)
+  }
+
+  return (
+    <motion.div className="month-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          scale: [1, 1.15, 1],
+          rotate: [0, 10, -10, 0]
+        }}
+        transition={{ duration: 2.5, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="fruit-name">{item.month}</div>
+      <div className="science-fact">Month #{item.order} of the year</div>
+      <div className="info-badge">
+        🌡️ Season: {item.season}
+      </div>
+      <div className="animal-habitat">
+        📅 Days: {item.days}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakMonth}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Read Month
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Preposition items
+const PrepositionCard = ({ item }) => {
+  const speakPreposition = () => {
+    speakWithVoice(`${item.word}. ${item.example}. ${item.visual}.`, 0.8)
+  }
+
+  return (
+    <motion.div className="preposition-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          y: item.word === 'On' ? [-5, 0] : 
+             item.word === 'Under' ? [0, 5] : 
+             item.word === 'Over' ? [-10, -5] : [0, 0]
+        }}
+        transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="fruit-name">{item.word}</div>
+      <div className="science-fact">{item.example}</div>
+      <div className="info-badge">
+        🎯 {item.visual}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakPreposition}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Read Position
       </motion.button>
     </motion.div>
   )

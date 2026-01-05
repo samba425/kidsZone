@@ -5,6 +5,8 @@ import LevelPage from './pages/LevelPage'
 import CategoryPage from './pages/CategoryPage'
 import GamesPage from './pages/GamesPage'
 import ParentDashboard from './components/ParentDashboard'
+import DailyLesson from './components/DailyLesson'
+import Badges from './components/Badges'
 import Mascot from './components/Mascot'
 import './App.css'
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/level/:levelId" element={<LevelPage />} />
         <Route path="/level/:levelId/category/:categoryId" element={<CategoryPage />} />
         <Route path="/games" element={<GamesPage />} />
+        <Route path="/daily-lesson" element={<DailyLesson />} />
+        <Route path="/badges" element={<Badges />} />
         <Route path="/parent-dashboard" element={<ParentDashboard />} />
       </Routes>
     </div>
