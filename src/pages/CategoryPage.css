@@ -1506,3 +1506,51 @@
   }
 }
 
+/* Sight Word Card Styles */
+.sight-word-large {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #667eea;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Phonics Card Styles */
+.letter-display {
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 900;
+  color: #667eea;
+  margin: 0.5rem 0;
+}
+
+.phonics-sound {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #f5576c;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+/* Safety Badge */
+.safety-badge {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #ff4444;
+}
+
+/* Good Habit Card */
+.good-habit-card {
+  border: 3px solid #4caf50;
+}
+
+/* Safety Rule Card */
+.safety-rule-card {
+  border: 3px solid #ff6b6b;
+}
+
+/* Weather Type Card */
+.weather-type-card {
+  border: 3px solid #4facfe;
+}
+

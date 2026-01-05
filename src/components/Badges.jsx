@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import confetti from 'canvas-confetti'
 import { getTotalStars } from '../utils/rewards'
 import './Badges.css'
 
 const Badges = () => {
+  const navigate = useNavigate()
   const [totalStars, setTotalStars] = useState(0)
   const [unlockedBadges, setUnlockedBadges] = useState([])
   const [showNewBadge, setShowNewBadge] = useState(null)
@@ -97,6 +99,14 @@ const Badges = () => {
   return (
     <div className="badges-container">
       <div className="badges-header">
+        <motion.button
+          className="home-button"
+          onClick={() => navigate('/')}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          🏠 Home
+        </motion.button>
         <h1>🏅 Your Badges</h1>
         <p className="total-stars">Total Stars: ⭐ {totalStars}</p>
         <p className="badges-count">

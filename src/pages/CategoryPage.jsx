@@ -138,6 +138,16 @@ const CategoryPage = () => {
         return <OppositeCard item={currentItem} />
       case 'prepositions':
         return <PrepositionCard item={currentItem} />
+      case 'sight_words':
+        return <SightWordCard item={currentItem} />
+      case 'good_habits':
+        return <GoodHabitCard item={currentItem} />
+      case 'weather_types':
+        return <WeatherTypeCard item={currentItem} />
+      case 'safety_rules':
+        return <SafetyRuleCard item={currentItem} />
+      case 'phonics':
+        return <PhonicsCard item={currentItem} />
       case 'clothing':
         return <ClothingCard item={currentItem} />
       case 'helpers':
@@ -2243,6 +2253,182 @@ const PrepositionCard = ({ item }) => {
         whileTap={{ scale: 0.9 }}
       >
         🔊 Read Position
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Sight Word items
+const SightWordCard = ({ item }) => {
+  const speakSightWord = () => {
+    speakWithVoice(`The word is ${item.word}. ${item.sentence}.`, 0.8)
+  }
+
+  return (
+    <motion.div className="sight-word-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          scale: [1, 1.2, 1]
+        }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="sight-word-large">{item.word}</div>
+      <div className="science-fact">{item.sentence}</div>
+      <div className="info-badge">
+        {item.difficulty === 'easy' ? '⭐ Easy' : '⭐⭐ Medium'}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakSightWord}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Read Word
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Good Habit items
+const GoodHabitCard = ({ item }) => {
+  const speakHabit = () => {
+    speakWithVoice(`${item.habit}. ${item.example}. ${item.why}.`, 0.8)
+  }
+
+  return (
+    <motion.div className="good-habit-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          scale: [1, 1.15, 1],
+          rotate: [0, 5, -5, 0]
+        }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="fruit-name">{item.habit}</div>
+      <div className="science-fact">{item.example}</div>
+      <div className="info-badge">
+        💡 Why: {item.why}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakHabit}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Learn Good Habit
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Weather Type items
+const WeatherTypeCard = ({ item }) => {
+  const speakWeather = () => {
+    speakWithVoice(`${item.type} weather. ${item.description}. ${item.activity}. Wear ${item.clothes}.`, 0.8)
+  }
+
+  return (
+    <motion.div className="weather-type-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          scale: item.type === 'Sunny' ? [1, 1.2, 1] : [1, 1.1, 1],
+          rotate: item.type === 'Windy' ? [0, 10, -10, 0] : [0]
+        }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="fruit-name">{item.type}</div>
+      <div className="science-fact">{item.description}</div>
+      <div className="info-badge">
+        🎯 Activity: {item.activity}
+      </div>
+      <div className="animal-habitat">
+        👔 Wear: {item.clothes}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakWeather}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Learn About Weather
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Safety Rule items
+const SafetyRuleCard = ({ item }) => {
+  const speakSafety = () => {
+    speakWithVoice(`Safety Rule: ${item.rule}. ${item.situation}. Why? ${item.why}.`, 0.8)
+  }
+
+  return (
+    <motion.div className="safety-rule-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          scale: [1, 1.1, 1]
+        }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="fruit-name">{item.rule}</div>
+      <div className="science-fact">{item.situation}</div>
+      <div className="info-badge safety-badge">
+        🛡️ {item.why}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakSafety}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Learn Safety Rule
+      </motion.button>
+    </motion.div>
+  )
+}
+
+// Component for Phonics items
+const PhonicsCard = ({ item }) => {
+  const speakPhonics = () => {
+    speakWithVoice(`The letter ${item.letter} says ${item.sound}. ${item.word}.`, 0.7)
+  }
+
+  return (
+    <motion.div className="phonics-card content-card">
+      <motion.div 
+        className="emoji-huge"
+        animate={{ 
+          y: [0, -10, 0]
+        }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        {item.emoji}
+      </motion.div>
+      <div className="letter-display">{item.letter}</div>
+      <div className="phonics-sound">Says: "{item.sound}"</div>
+      <div className="science-fact">{item.example}</div>
+      <div className="info-badge">
+        🔊 {item.word}
+      </div>
+      <motion.button
+        className="speak-button"
+        onClick={speakPhonics}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        🔊 Hear Sound
       </motion.button>
     </motion.div>
   )

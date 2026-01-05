@@ -1529,6 +1529,82 @@
           { "word": "In front of", "emoji": "🎭", "example": "Stand IN FRONT OF the class", "visual": "First position" },
           { "word": "Between", "emoji": "🥪", "example": "You are BETWEEN mom and dad", "visual": "👩👶👨" }
         ]
+      },
+      "sight_words": {
+        "title": "Sight Words",
+        "icon": "👀",
+        "items": [
+          { "word": "the", "emoji": "📚", "sentence": "I read THE book", "difficulty": "easy" },
+          { "word": "and", "emoji": "➕", "sentence": "You AND me are friends", "difficulty": "easy" },
+          { "word": "is", "emoji": "✨", "sentence": "The sun IS bright", "difficulty": "easy" },
+          { "word": "you", "emoji": "👉", "sentence": "YOU are special", "difficulty": "easy" },
+          { "word": "to", "emoji": "→", "sentence": "Go TO school", "difficulty": "easy" },
+          { "word": "it", "emoji": "🎁", "sentence": "IT is a gift", "difficulty": "easy" },
+          { "word": "in", "emoji": "📦", "sentence": "Toy IN the box", "difficulty": "easy" },
+          { "word": "can", "emoji": "💪", "sentence": "I CAN do it!", "difficulty": "easy" },
+          { "word": "see", "emoji": "👀", "sentence": "I SEE a bird", "difficulty": "medium" },
+          { "word": "like", "emoji": "❤️", "sentence": "I LIKE cookies", "difficulty": "medium" },
+          { "word": "go", "emoji": "🏃", "sentence": "Let's GO play", "difficulty": "medium" },
+          { "word": "we", "emoji": "👫", "sentence": "WE are happy", "difficulty": "medium" }
+        ]
+      },
+      "good_habits": {
+        "title": "Good Habits & Manners",
+        "icon": "🌟",
+        "items": [
+          { "habit": "Say Please", "emoji": "🙏", "example": "May I have water, PLEASE?", "why": "Shows respect" },
+          { "habit": "Say Thank You", "emoji": "😊", "example": "THANK YOU for helping me!", "why": "Shows gratitude" },
+          { "habit": "Share Toys", "emoji": "🎁", "example": "Let's SHARE and play together", "why": "Makes friends happy" },
+          { "habit": "Wash Hands", "emoji": "🧼", "example": "Wash hands before eating", "why": "Stays healthy" },
+          { "habit": "Brush Teeth", "emoji": "🪥", "example": "Brush teeth twice daily", "why": "Keeps teeth strong" },
+          { "habit": "Say Sorry", "emoji": "💙", "example": "I'm SORRY, I made a mistake", "why": "Shows you care" },
+          { "habit": "Help Others", "emoji": "🤝", "example": "Help mom clean up toys", "why": "Makes everyone happy" },
+          { "habit": "Listen Carefully", "emoji": "👂", "example": "Listen when teacher talks", "why": "Learn better" },
+          { "habit": "Be Kind", "emoji": "💕", "example": "Be kind to animals", "why": "Spreads love" },
+          { "habit": "Eat Healthy", "emoji": "🥗", "example": "Eat fruits and vegetables", "why": "Grow strong" }
+        ]
+      },
+      "weather_types": {
+        "title": "Weather & Seasons",
+        "icon": "🌤️",
+        "items": [
+          { "type": "Sunny", "emoji": "☀️", "description": "Bright and warm day", "activity": "Play outside, wear sunhat", "clothes": "Light clothes" },
+          { "type": "Rainy", "emoji": "🌧️", "description": "Water falls from clouds", "activity": "Use umbrella, jump in puddles", "clothes": "Raincoat, boots" },
+          { "type": "Cloudy", "emoji": "☁️", "description": "Sky covered with clouds", "activity": "Good day for reading", "clothes": "Regular clothes" },
+          { "type": "Windy", "emoji": "💨", "description": "Strong wind blowing", "activity": "Fly a kite", "clothes": "Jacket" },
+          { "type": "Snowy", "emoji": "❄️", "description": "White snow falling", "activity": "Make snowman", "clothes": "Warm coat, gloves" },
+          { "type": "Stormy", "emoji": "⛈️", "description": "Thunder and lightning", "activity": "Stay inside safely", "clothes": "Stay indoors" }
+        ]
+      },
+      "safety_rules": {
+        "title": "Safety First!",
+        "icon": "🛡️",
+        "items": [
+          { "rule": "Look Both Ways", "emoji": "👀", "situation": "Before crossing the road", "why": "Stay safe from cars" },
+          { "rule": "Hold Adult's Hand", "emoji": "🤝", "situation": "When walking near roads", "why": "Stay close and safe" },
+          { "rule": "Don't Talk to Strangers", "emoji": "🚫", "situation": "If someone you don't know approaches", "why": "Stay with people you trust" },
+          { "rule": "Wear Helmet", "emoji": "🪖", "situation": "When riding bicycle", "why": "Protect your head" },
+          { "rule": "Don't Touch Fire", "emoji": "🔥", "situation": "Stay away from hot things", "why": "Fire can hurt" },
+          { "rule": "Ask Before Eating", "emoji": "🍪", "situation": "Unknown food or medicine", "why": "Some things aren't safe" },
+          { "rule": "Know Your Address", "emoji": "🏠", "situation": "In case you get lost", "why": "Helpers can find your home" },
+          { "rule": "Know Emergency Number", "emoji": "📞", "situation": "If you need help", "why": "Call for emergency" }
+        ]
+      },
+      "phonics": {
+        "title": "Letter Sounds (Phonics)",
+        "icon": "🔊",
+        "items": [
+          { "letter": "A", "sound": "ah", "emoji": "🍎", "example": "Apple", "word": "Apple starts with 'ah'" },
+          { "letter": "B", "sound": "buh", "emoji": "🐝", "example": "Bee", "word": "Bee starts with 'buh'" },
+          { "letter": "C", "sound": "kuh", "emoji": "🐱", "example": "Cat", "word": "Cat starts with 'kuh'" },
+          { "letter": "D", "sound": "duh", "emoji": "🐶", "example": "Dog", "word": "Dog starts with 'duh'" },
+          { "letter": "E", "sound": "eh", "emoji": "🥚", "example": "Egg", "word": "Egg starts with 'eh'" },
+          { "letter": "F", "sound": "fuh", "emoji": "🐸", "example": "Frog", "word": "Frog starts with 'fuh'" },
+          { "letter": "G", "sound": "guh", "emoji": "🎁", "example": "Gift", "word": "Gift starts with 'guh'" },
+          { "letter": "H", "sound": "huh", "emoji": "🏠", "example": "House", "word": "House starts with 'huh'" },
+          { "letter": "I", "sound": "ih", "emoji": "🍦", "example": "Ice cream", "word": "Ice cream starts with 'ih'" },
+          { "letter": "J", "sound": "juh", "emoji": "🕹️", "example": "Juice", "word": "Juice starts with 'juh'" }
+        ]
       }
     }
   },

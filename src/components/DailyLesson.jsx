@@ -100,6 +100,14 @@ const DailyLesson = () => {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
+        <motion.button
+          className="home-button"
+          onClick={() => navigate('/')}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          🏠 Home
+        </motion.button>
         <h1 className="lesson-title">📚 Today's Learning Plan</h1>
         <p className="lesson-date">{todayDate}</p>
         <div className="user-stats">
