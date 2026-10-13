@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "c4824096c0c04adc201fe5c7fa4ea79c",
+const RESOURCES = {"flutter_bootstrap.js": "3b476fbc2be9473819e8539e768c039b",
 "version.json": "ef0b0dbafcada7ce680da0f9aec18b0b",
 "index.html": "4ee6edd330dc116771157384530d69b9",
 "/": "4ee6edd330dc116771157384530d69b9",
-"main.dart.js": "969facd713317663793a1a7554ff5705",
+"main.dart.js": "821eed05215745682be4b63e6a15cf04",
 "flutter.js": "24bc71911b75b5f8135c949e27a2984e",
 "favicon.png": "b7c0d0e14bc32ad5cb498b48d73f8afb",
 "icons/Icon-192.png": "6f7267c0134b70a0cf2896c236d2cba9",
@@ -32,6 +32,7 @@ const RESOURCES = {"flutter_bootstrap.js": "c4824096c0c04adc201fe5c7fa4ea79c",
 "assets/assets/coloring_pages/giraffe.png": "bc4c8179a006397df273752df365a445",
 "assets/assets/coloring_pages/puppy.png": "a6c74bff682b7919a7aaa4e8230d45a9",
 "assets/assets/coloring_pages/bear.png": "0bf440583e2c10aa2449a8565f4a5430",
+"privacy.html": "e2bbfce4c650f4bc23ae8f4beddaef01",
 "canvaskit/skwasm.js": "8060d46e9a4901ca9991edd3a26be4f0",
 "canvaskit/skwasm_heavy.js": "740d43a6b8240ef9e23eed8c48840da4",
 "canvaskit/skwasm.js.symbols": "3a4aadf4e8141f284bd524976b1d6bdc",
